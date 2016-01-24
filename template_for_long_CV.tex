@@ -1,0 +1,178 @@
+\documentclass[11pt, letter]{article}
+
+% This is a tex file to make Ben Schmidt's CV.
+% The content is 
+
+\usepackage{jk-vita,biblatex}
+
+%\usepackage{biblatex}
+%\usepackage[notes,natbib,isbn=false,backend=biber,url=false,numbermonth=true]{biblatex-chicago}
+% Your biblatex file is likely somewhere else.
+$if(bibliography)$
+\addbibresource{$bibliography$}
+$endif$
+
+\title{}
+\name{$name$}
+% I guess postnoms is like junior? I dunno.
+\postnoms{}
+\address{
+$for(address)$
+  $address$\\
+$endfor$
+}
+\www{$www$}
+\email{$email$}
+\tel{$tel$}
+\twitter{$twitter$}
+\subject{}
+
+
+\begin{document}
+
+\maketitle
+
+
+
+
+\section{appointments}
+
+$for(appointment)$
+\subsection{$appointment.place$}
+$for(appointment.items)$
+$appointment.items.item$. $appointment.items.date$. \\
+$endfor$
+$endfor$
+
+\section{education}
+% Education uses a different field called ``items.''
+$for(education)$
+\subsection{$education.place$, $education.item$, $education.date$}
+$if(education.item)$
+$for(education.info)$
+$education.info$ \\
+$endfor$
+$endif$
+$endfor$
+
+% A little wonky. I want my publications divided up based on tags.
+% (Yes, it would be better to just do this with bib file). That's for later.
+
+\section{publications}
+
+\subsection{Academic Publications}
+
+$for(publication)$
+$if(publication.tags.academic)$
+$if(publication.citekey)$
+\cite{$publication.citekey$}.\\[.15cm]
+$else$
+$if(publication.author)$$publication.author$,$endif$
+``$publication.title$.'' $if(publication.journal)$\textit{$publication.journal$}$if(publication.journal_info)$, $publication.journal_info$$endif$.$endif$ $publication.date$$if(publication.description)$. $publication.description$$endif$.\\[.15cm]
+% End of block for academic publications
+$endif$ 
+$else$
+
+$if(publication.tags.public)$
+$else$
+% Raise an error if some publication is neither public nor academic;
+% otherwise I'll lose some out of stupidity.
+\error{$publication.title$}
+$endif$
+$endif$
+$endfor$
+
+\subsection{General Audience Publications}
+
+$for(publication)$
+$if(publication.tags.public)$
+$if(publication.citekey)$
+\cite{$publication.citekey$}.\\[.15cm]
+$else$
+$if(publication.author)$$publication.author$,$endif$
+``$publication.title$.'' $if(publication.journal)$\textit{$publication.journal$}$if(publication.journal_info)$, $publication.journal_info$$endif$.$endif$ $publication.date$$if(publication.description)$. $publication.description$$endif$.\\[.15cm]
+$endif$
+% End of block for general publications
+$endif$
+$endfor$
+
+\section{grants}
+
+$for(grants)$
+$grants$\\[.15cm]
+$endfor$
+
+\section{invited talks}
+
+$for(invited_talk)$
+``$invited_talk.title$.'' $if(invited_talk.host)$$invited_talk.host$, $endif$$invited_talk.place$.$invited_talk.date$.\\[.15cm]
+$endfor$
+
+
+\section{workshops}
+
+$for(workshop)$
+``$workshop.title$.''
+$if(workshop.host)$$workshop.host$, $endif$
+$workshop.place$.
+$workshop.date$.\\[.15cm]
+$endfor$
+
+\section{conference talks}
+
+$for(conference)$
+``$conference.title$.''
+$if(conference.host)$$conference.host$, $endif$
+$conference.place$.
+$conference.date$.\\[.15cm]
+$endfor$
+
+\section{courses taught}
+
+$for(teaching)$
+``$teaching.title$.'' $teaching.date$. ($teaching.type$)\\[.15cm]
+$endfor$
+
+
+\section{public history}
+
+$for(public_history)$
+% This one has a hierarchical setup: there are multiple roles in public history, and
+% each can have any number of ``gigs''
+% These are irregular enough that I just use an ``item'' field to store the text.
+\subsection{$public_history.role$}
+$for(public_history.gigs)$
+$public_history.gigs.item$ $public_history.gigs.date$.\\[.15cm]
+$endfor$
+$endfor$
+\subsection{Selected media coverage}
+
+$for(media_coverage)$
+$if(media_coverage.citekey)$
+\fullcite{$media_coverage.citekey$}\\
+$else$
+$media_coverage.title$
+$endif$
+$endfor$
+
+
+\section{service}
+$for(service)$
+\subsection{$service.type$}
+$for(service.gigs)$
+$service.gigs.item$. $service.gigs.date$.\\[.15cm]
+$endfor$
+$endfor$
+
+
+\section{research competencies}
+$for(competencies)$
+\subsection{$competencies.type$}
+$for(competencies.items)$
+$competencies.items$.\\[.15cm]
+$endfor$
+$endfor$
+
+
+
+\end{document}

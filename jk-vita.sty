@@ -1,0 +1,286 @@
+%% Curriculum Vitae style file
+%% 
+%% James Keirstead
+%% Last updated: 2 March 2015
+%%
+%% This file contains elements from:
+%%  - http://robjhyndman.com/research/cv.sty
+%%  - http://kjhealy.github.com/kjh-vita
+%%
+
+%% ------------------------------------------------------------------------
+%%  Load required packages
+%%  ------------------------------------------------------------------------
+\usepackage{paralist,ragged2e,datetime}
+\usepackage{hyperref,fancyhdr,enumitem,color}
+\usepackage[centering]{geometry}
+\usepackage{fontawesome}
+\usepackage[compact,small,sf,bf]{titlesec}
+
+%% ------------------------------------------------------------------------  
+%%  Git version tracking 
+%% ------------------------------------------------------------------------
+
+%% If you don't use git or the vc package (from CTAN), comment this out.
+%% If you comment it out, be sure to remove the \rfoot comment below, too.
+%% See vc manual to compile with xelatex -enable-write18 vita
+\immediate\write18{vc.sh}
+\input{vc}
+
+%% ------------------------------------------------------------------------
+%% Fonts and colours
+%% ------------------------------------------------------------------------
+%% needed for xelatex to work
+\usepackage{fontspec}
+\usepackage{xunicode}
+
+%% color for the links 
+\usepackage[usenames,dvipsnames]{xcolor}
+\definecolor{ImperialBlue}{rgb}{0.082,0.416,0.608}
+\definecolor{ImperialLightBlue}{rgb}{0.545,0.682,0.8}
+
+%% Choose fonts for use with xelatex
+%% Minion and Myriad are widely available, from Adobe. 
+%% Pragmata is available to buy at http://www.fsd.it/fonts/pragma.htm
+%% and is worth every penny. Any good monospace font will work fine, though.
+%% Consolas or inconsolata are good alternatives.
+\setromanfont[Mapping={tex-text},Numbers={OldStyle},Ligatures={Common}]{Minion Pro} 
+\setsansfont[Mapping=tex-text,Colour=ImperialBlue]{Myriad Pro}
+\setmonofont[Mapping=tex-text,Scale=0.9]{Avenir Next Condensed Regular} % Consolas, Pragmata, Lucida Console
+
+%% ------------------------------------------------------------------------
+%% Header and footer
+%% ------------------------------------------------------------------------
+
+% git revision info inserted via external script -- see docs for vc
+% package for details. comment out this line if you're not using vc,
+% and also remove the \input{vc} line above.
+
+% What use is a commit number?
+%\newcommand{\gitinfo}{\textcolor{Gray}{\texttt{\scriptsize \VCRevision\ on \VCDateTEX}}}
+\newcommand{\gitinfo}{\textcolor{Gray}{\texttt{\scriptsize Last updated \VCDateTEX}}}
+
+% Style for the front page
+\fancypagestyle{myplain}{%
+  \fancyhf{}
+  \renewcommand\headrulewidth{0pt}
+  \renewcommand\footrulewidth{0pt}
+  \fancyfoot[R]{\gitinfo}
+}
+
+% Style for the other pages
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead{}
+\fancyfoot{}
+\rhead{{\scriptsize\thepage}}
+%Healey on puts the revision on page 1.
+%\rfoot{\gitinfo}
+
+
+%%------------------------------------------------------------------------
+%% Basic name functions and title box
+%%------------------------------------------------------------------------
+
+%% used below in the hyperref declaration and address banner section.
+\def\title#1{\def\@title{#1}}
+\def\name#1{\def\@name{#1}}
+\def\www#1{\def\@www{#1}}
+\def\email#1{\def\@email{#1}}
+\def\twitter#1{\def\@twitter{#1}}
+\def\tel#1{\def\@tel{#1}}
+\def\postnoms#1{\def\@postnoms{#1}}
+\def\address#1{\def\@address{#1}}
+\def\subject#1{\def\@subject{#1}}
+
+%% Date format (if you wanted to include the date but you'll see below
+%% I just use the version control info instead
+% \newdateformat{rjh}{\monthname~\THEYEAR}
+% \rjh
+\date{} % not used (revision control instead)
+
+%% hyperlinks
+\AtBeginDocument{%
+  \def\keywords{\@name, Vita, CV, Resume, \@subject}
+  \hypersetup{xetex, 
+    colorlinks=true,
+    urlcolor=ImperialBlue,
+    plainpages=false,
+    pdfpagelabels,
+    bookmarksnumbered,
+    pdftitle={Vita},
+    pagebackref,
+    pdfauthor={\@name},
+    pdfkeywords={\keywords}
+  }
+}
+
+\def\maketitle{
+  \thispagestyle{myplain}
+
+  % Pull header block up
+  \vspace*{-6em}
+
+
+  \begin{minipage}[t]{3.5in}
+    \flushright {\footnotesize \@address} 
+  \end{minipage}
+  \hfill     
+  \begin{minipage}[t]{1.7in}
+    \flushright
+    {\scriptsize \texttt{\@tel \, \faPhone} } \\
+    {\scriptsize  \texttt{\href{mailto:\@email}{\@email}} \, \faEnvelope} \\
+    {\scriptsize  \texttt{\href{http://\@www}{\@www}} \, \faGlobe} \\
+    {\scriptsize  \texttt{\href{http://twitter.com/\@twitter}{\@twitter} \, \faTwitter}}
+  \end{minipage}
+
+  \bigskip
+  \bigskip
+
+  %% Name 
+  \noindent{\LARGE\scshape{\@title\ \@name}} {\scriptsize \textsc{\@postnoms}}\\
+  \bigskip
+  \bigskip
+
+}
+
+%%------------------------------------------------------------------------
+%% Section styling
+%%------------------------------------------------------------------------
+
+%% This includes a fudge from the following link in order to get the
+%% subsection to align with a section
+%% http://tex.stackexchange.com/questions/19200/titlesec-remove-space-after-empty-margin-section
+
+\makeatletter
+\newif\ifaftersec\aftersecfalse
+
+\newcommand\setsubskip{%
+    \global\aftersectrue
+    \everypar{%
+        \global\aftersecfalse
+        \if@noskipsec
+            \global\@noskipsecfalse
+            \clubpenalty\@M
+            \hskip-\parindent
+            \begingroup
+                \@svsechd\unskip{\hspace{\@tempskipb}}%
+            \endgroup
+        \else
+            \clubpenalty\@clubpenalty\everypar{}%
+        \fi}}
+
+\newcommand\subskip{%
+  \ifaftersec
+     \removelastskip%         EDIT 2
+     \vspace{-\baselineskip}% EDIT 2 ??????????????
+  \fi
+  \global\aftersecfalse}
+
+% Section styling
+\titleformat{\section}[leftmargin]{\raggedleft\sffamily\footnotesize}{}{0pt}{}[\setsubskip]
+\titlespacing*{\section}{2cm}{2.5ex}{0.5cm}
+
+% Subsection styling
+\titleformat{\subsection}{\subskip\itshape}{}{0pt}{}[]
+\titlespacing*{\subsection}{0pt}{2ex}{1ex}
+
+\raggedbottom
+\makeatother
+
+%% ------------------------------------------------------------------------
+%%   Bibliography formatting
+%% ------------------------------------------------------------------------
+
+% \usepackage[uniquename=init,dashed=false,doi=false,isbn=false,backend=biber]{biblatex-chicago}
+\usepackage[notes,natbib,isbn=false,backend=biber,url=false,numbermonth=true]{biblatex-chicago}  
+
+\DeclareFieldFormat{url}{\url{#1}}
+\DeclareFieldFormat[article]{pages}{#1}
+\DeclareFieldFormat[inproceedings]{pages}{\lowercase{pp.}#1}
+\DeclareFieldFormat[incollection]{pages}{\lowercase{pp.}#1}
+\DeclareFieldFormat[article]{volume}{\mkbibbold{#1}}
+\DeclareFieldFormat[article]{number}{\mkbibparens{#1}}
+\DeclareFieldFormat[article]{title}{\MakeCapital{#1}}
+\DeclareFieldFormat[article]{url}{}
+\DeclareFieldFormat[inproceedings]{title}{#1}
+\DeclareFieldFormat{shorthandwidth}{#1}
+\DeclareFieldFormat{extrayear}{}
+
+% No dot before number of articles
+\usepackage{xpatch}
+\xpatchbibmacro{volume+number+eid}{\setunit*{\adddot}}{}{}{}
+
+% Remove In: for an article.
+\renewbibmacro{in:}{%
+  \ifentrytype{article}{}{%
+  \printtext{\bibstring{in}\intitlepunct}}}
+
+% Bibliography categories
+\def\makebibcategory#1#2{\DeclareBibliographyCategory{#1}\defbibheading{#1}{\subsection*{#2}}}
+\makebibcategory{books}{Books}
+\makebibcategory{papers}{Journal articles}
+\makebibcategory{chapters}{Book chapters}
+\makebibcategory{conferences}{Conference papers \& posters}
+\makebibcategory{techreports}{Unpublished working papers}
+\makebibcategory{bookreviews}{Book reviews}
+\makebibcategory{editorials}{Editorials}
+\makebibcategory{phd}{PhD thesis}
+\makebibcategory{subpapers}{Submitted papers}
+\makebibcategory{curpapers}{Current projects}
+\makebibcategory{other}{Reviews, software \& other writing}
+
+\setlength{\bibitemsep}{2.5pt}
+\setlength{\bibhang}{.8cm}
+%\renewcommand{\bibfont}{\fontsize{12}{14}}
+
+\renewcommand*{\bibitem}{\addtocounter{papers}{1}\item \mbox{}\hskip-0.85cm\hbox to 0.85cm{\hfill\arabic{papers}.~~}}
+\defbibenvironment{bibliography}
+{\list{}
+  {\setlength{\leftmargin}{\bibhang}%
+   \setlength{\itemsep}{\bibitemsep}%
+   \setlength{\parsep}{\bibparsep}}}
+{\endlist}
+{\bibitem}
+
+\newenvironment{publications}{\section{Publications}\label{papersstart}}%
+{\label{papersend}\addtocounter{sumpapers}{-1}\refstepcounter{sumpapers}\label{sumpapers}}
+
+\def\printbib#1{\printbibliography[category=#1,heading=#1]\lastref{sumpapers}}
+\renewcommand{\bibfont}{\normalfont\fontsize{11}{13.4}\rmfamily}
+% Counters for keeping track of papers
+\newcounter{papers}\setcounter{papers}{0}
+\newcounter{sumpapers}\setcounter{sumpapers}{0}
+\def\lastref#1{\addtocounter{#1}{\value{papers}}\setcounter{papers}{0}}
+
+% Add all papers in the bib file.
+\nocite{*}
+
+%%%------------------------------------------------------------------------
+%%% Local commands
+%%%------------------------------------------------------------------------
+%% No bullets on labels
+\renewcommand{\labelitemi}{~} 
+
+%% Custom hanging indent for vita items
+\def\ind{\hangindent=1 true cm\hangafter=1 \noindent}
+\def\labelitemi{~}
+\renewcommand{\labelitemii}{~}
+
+%%%------------------------------------------------------------------------
+%% Geometry stuff
+%%%------------------------------------------------------------------------
+
+% This command allows hyphenation, where \raggedright does not
+\RaggedRight
+\sloppy
+
+% Miscellaneous dimensions
+\setlength{\parskip}{0ex}
+\setlength{\parindent}{0em}
+\setlength{\headheight}{15pt}
+\setlength{\tabcolsep}{0.15cm}
+\clubpenalty = 10000
+\widowpenalty = 10000
+\setlist{itemsep=1pt}
+\setdescription{labelwidth=1.2cm,leftmargin=1.5cm,labelindent=1.5cm,font=\rm}
