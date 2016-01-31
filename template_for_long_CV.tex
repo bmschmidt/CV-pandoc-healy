@@ -105,7 +105,7 @@ $endfor$
 \section{invited talks}
 
 $for(invited_talk)$
-``$invited_talk.title$.'' $if(invited_talk.host)$$invited_talk.host$, $endif$$invited_talk.place$.$invited_talk.date$.\\[.15cm]
+``$invited_talk.title$.'' $if(invited_talk.host)$$invited_talk.host$, $endif$$invited_talk.place$. $invited_talk.date$.\\[.15cm]
 $endfor$
 
 
@@ -113,8 +113,7 @@ $endfor$
 
 $for(workshop)$
 ``$workshop.title$.''
-$if(workshop.host)$$workshop.host$, $endif$
-$workshop.place$.
+$if(workshop.host)$$workshop.host$, $endif$$workshop.place$.
 $workshop.date$.\\[.15cm]
 $endfor$
 
@@ -169,7 +168,7 @@ $endfor$
 $for(competencies)$
 \subsection{$competencies.type$}
 $for(competencies.items)$
-$competencies.items$.\\[.15cm]
+$competencies.items$\\[.15cm]
 $endfor$
 $endfor$
 

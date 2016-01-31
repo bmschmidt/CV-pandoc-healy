@@ -5,7 +5,7 @@ address:
     - Northeastern University
     - 360 Huntington Avenue
     - Boston, MA 02118
-email: bmschmidt@post.harvard.edu
+email: b.schmidt@neu.edu
 twitter: benmschmidt
 www: benschmidt.org
 tel: 609.619.0629
@@ -44,8 +44,8 @@ education:
     item: M.A. in History
     date: June 2007
     info:
-      - Major field in U.S. History 1865–2000
-      - Minor fields in European intellectual history 1870–2000 and American intellectual and cultural history
+      - Major field in U.S. History 1865–2000.
+      - Minor fields in European intellectual history 1870–2000 and American intellectual and cultural history.
   -
     place: Harvard University
     item: A.B. in Social Studies, magna cum laude
@@ -54,6 +54,10 @@ education:
       - 'Honors thesis: "Adorno on the Air: Theodor Adorno and the Princeton Radio Research Project." Advisor: Peter Eli Gordon.'
 
 publication:
+	-
+	  citekey: schmidt_modeling_2016
+	  tags:
+	     academic: true
     -
 	  citekey: schmidt_digital_2016
       title: "Do Digital Humanists Need to Understand Algorithms?"
@@ -63,10 +67,10 @@ publication:
       date: 2016
       place: University of Minnesota Press
       tags:
-        academic: true         
+        academic: true
     -
 	  citekey: schmidt_plot_2015
-      date: 2016
+      date: 2015
       title: "Plot Arceology: A Vector Space Model of Plot"
       journal: "Proceedings of the 2015 IEEE International Conference on Big Data"
       tags:
@@ -135,7 +139,8 @@ publication:
       url: "http://www.theatlantic.com/features/archive/2015/01/the-language-of-the-state-of-the-union/384575/"
       tags:
         public: true
-    - 
+	-
+	  citekey: schmidt_data_2013
       title: "The data shows there's no real crisis"
       journal: "The New York Times"
       journal_info: "Room for Debate"
@@ -172,12 +177,12 @@ invited_talk:
     host: Institute for Quantitative Theory and Methods Data Visualization speaker series
     place: Emory University
   -
-    date: May 2015
+    date: May 11, 2015
     title: "Plot Arceology"
     host: Literary Lab
     place: Stanford University
   -
-    date: May 2015
+    date: May 10, 2015
     title: "Reconstructing the Map"
     host: Center for Spatial and Textual Analysis
     place: Stanford University
@@ -201,7 +206,7 @@ invited_talk:
     place: University of Georgia
     date: April 22, 2014
   -
-    title: "Data narratives and group dynamics in digital history: a case study in ship's logs"
+    title: "Data narratives and group dynamics in digital history: a case study in ships' logs"
     host: Digital History symposium and roundtable
     place: University of Nebraska, Lincoln
     date: April 11, 2014
@@ -244,8 +249,12 @@ invited_talk:
 home_institution:
 - 
   title: "What gender's got to do with teaching evaluations."
-  place: “Confflict. Civility. Respect. Peace. North­eastern Reflects series on civic sustainability"
-  date: November 4, 2015
+  place: “Conflict. Civility. Respect. Peace. North­eastern Reflects series on civic sustainability"
+  date: November 4, 201
+-
+  title: "Open Access in the Digital Humanities"
+  host: Open Access Week event, Northeastern University
+  date: October 22, 2013
 
 conference:
 -
@@ -265,8 +274,8 @@ conference:
   date: October 7, 2014
 -
   title: "Why we worry about humanities enrollments"
-  host: Panel on responses to the American Academy Report on the Humanities; National Conference on Public History
-  place: Monterey, California
+  host: Panel on responses to the American Academy Report on the Humanities
+  place: National Conference on Public History; Monterey, California
   date: March 2014
 -
   title: "Transforming Texts into Cartesian Spaces"
@@ -274,12 +283,9 @@ conference:
   place: Northeastern University
   date: December 2013
 -
-  title: "Open Access in the Digital Humanities"
-  host: Open Access Week event, Northeastern University
-  date: October 22, 2013
--
   title: "Reading texts with Big Metadata: the Bookworm platform for digital books, newspapers, and other libraries"
-  place: Featured Talk, Boston Area Days of DH
+  host: Featured Talk, Boston Area Days of DH
+  place: Northeastern University
   date: March 19, 2013
 -
   title: "Reading Genres: Exploring Massive Digital Collections From the Top Down"
@@ -317,9 +323,9 @@ conference:
   place: Princeton University
   date: March 2010
 
-workshop and teaching:
+workshop:
 -
-  title: Text Analytics for Medical History (Instructor, NEH/NIH workshop.)
+  title: Text Analytics for Medical History (Instructor, NEH/NIH workshop)
   host: National Institutes of Health
   place: Bethesda, MD
   date: April 11, 2016
@@ -454,11 +460,11 @@ service:
 -
   type: "Service to the Profession"
   gigs:
-    -
-      item: Advisory Board, Culture Analytics
+	-
+      item:  Working Group on Data and History, Social Science Resource Council
       date: 2015-Present
     -
-      item:  Working Group on Data and History, Social Science Resource Council
+      item: Advisory Board, Culture Analytics
       date: 2015-Present
     -
       item:  Grant reviewer, National Endowment for the Humanities
@@ -467,7 +473,7 @@ service:
       item:  Digital Content Advisor, The American Yawp, Online History Textbook
       date: 2014-Present
     -
-      item:  Participant, Hathi Trust Research Center Un-Camp, 
+      item:  Participant, Hathi Trust Research Center Un-Camp
       date: September 10-11, 2012
     -
       item:  Invited Participant, Digital Public Library of America Technical Development Meeting

@@ -15,8 +15,8 @@ CV.tex: yaml_CV.md template_for_long_CV.tex
 	pandoc --template=./template_for_long_CV.tex -t latex yaml_CV.md > CV.tex
 	# Citekeys get screwed up by pandoc which escapes the underscores.
 	# Years should have en-dashes.	
-	perl -pi -e 'if ($$_=~/cite\{/) {s/\\_/_/g}; s/(\d{4})-([Pp]resent|\d{4})/$$1--$$2g/' CV.tex;
+	perl -pi -e 'if ($$_=~/cite\{/) {s/\\_/_/g}; s/(\d{4})-([Pp]resent|\d{4})/$$1--$$2/g' CV.tex;
 
 clean:
-	rm -f CV.aux CV.bcf CV.log CV.out CV.run.xml CV.pdf CV.tex
+	rm -f CV.aux CV.bcf CV.log CV.out CV.run.xml CV.pdf CV.tex CV.bbl CV.blg
 
