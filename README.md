@@ -10,6 +10,8 @@ These are templates designed to do three things:
 
 I've drifted far enough from any of those that it doesn't quite make sense to treat this repo as a fork (of either Healy or Keirstead).
 
+[Here's **an example** of the CV output by this repository.](http://benschmidt.org/SchmidtCV.pdf)
+
 ## Additions
 
 The basic `.sty` file is from Keirstead, with a few dependencies (the funky little Twitter icon from fontawesome) folded back in from Healy's CV.

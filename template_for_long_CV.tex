@@ -3,10 +3,11 @@
 % This is a tex file to make Ben Schmidt's CV.
 % The content is 
 
-\usepackage{jk-vita,biblatex}
+\usepackage{jk-vita}
+\usepackage[notes,natbib,isbn=false,backend=biber,url=false,numbermonth=true]{biblatex-chicago}
 
 %\usepackage{biblatex}
-%\usepackage[notes,natbib,isbn=false,backend=biber,url=false,numbermonth=true]{biblatex-chicago}
+
 % Your biblatex file is likely somewhere else.
 $if(bibliography)$
 \addbibresource{$bibliography$}
