@@ -36,7 +36,9 @@ education:
     item: Ph.D. in History
     date: November 2013
     info:
-      - 'Dissertation: "Paying Attention: The psychological subject in advertising, education, and culture, 1890–1960."'
+      -
+        text: 'Dissertation: "Paying Attention: The psychological subject in advertising, education, and culture, 1890–1960."'
+        twopage: true
       - 'Committee: Daniel Rodgers (advisor), Emily Thompson (first reader), Anthony Grafton (second reader), Daniel Cohen (outside reader).'
   -
     place: Princeton University
@@ -53,121 +55,115 @@ education:
       - 'Honors thesis: "Adorno on the Air: Theodor Adorno and the Princeton Radio Research Project." Advisor: Peter Eli Gordon.'
 
 publication:
-	-
-	  citekey: schmidt_modeling_2016
-	  tags:
-	     academic: true
-    -
-	  citekey: schmidt_digital_2016
-      title: "Do Digital Humanists Need to Understand Algorithms?"
-      journal: Debates in the Digital Humanities 2016
-      journal_info: ed. Matthew Gold and Lauren Klein
-      type: chapter
-      date: 2016
-      place: University of Minnesota Press
-      tags:
-        academic: true
-    -
-	  citekey: schmidt_plot_2015
-      date: 2015
-      title: "Plot Arceology: A Vector Space Model of Plot"
-      journal: "Proceedings of the 2015 IEEE International Conference on Big Data"
-      tags:
-        academic: true
-        peer_reviewed: true
-    -
-	  citekey: schmidt_words_2013
-      date: April 2013
-      title: "Words Alone: Dismantling Topic Models in the Humanities"
-      journal: Journal of Digital Humanities
-      journal_info: Vol. 2 No. 1 
-      url: http://journalofdigitalhumanities.org/2-1/words-alone-by-benjamin-m-schmidt/
-      tags:
-        academic: true
-    -
-	  citekey: schmidt_theory_2012
-	  date: April 2012
-      title: "Theory First"
-      journal: Journal of Digital Humanities
-      journal_info: Vol. 1 No. 1
-      tags:
-        academic: true
-    -
-      date: November 2010-Present
-      url: sappingattention.blogspot.com
-      title: Sapping Attention
-      description: Blog publishing original research and discussion in digital humanities, data visualization, and text mining
-      tags:
-        academic: true
-        blog: true
-    -
-      date: 2011-Present
-      title: Bookworm
-      url: https://github.com/Bookworm-project
-      description: Interactive website, database, and API
-      tags:
-        academic: true
-        software: true
-    -
-	  citekey: schmidt_ranking_2007
-      date: July 2007
-      author: "Benjamin MacDonald Schmidt and Matthew Chingos"
-      title: "Ranking Doctoral Programs by Placement: A New Method"
-      journal: "PS: Political Science & Politics"
-      journal_info: Vol 40, pages 523-529
-      tags:
-        academic: true
-        peer_reviewed: true
-    -
-      citekey: schmidt_is_2015
-      tags:
-        public: true
-    -
-      author: "Ben Schmidt and Mitch Fraas"
-      title: "The Language of the State of the Union"
-      journal: "The Atlantic"
-      date: "January 18, 2015" 
-      url: "http://www.theatlantic.com/features/archive/2015/01/the-language-of-the-state-of-the-union/384575/"
-      tags:
-        public: true
-    -
-      author: "Mitch Fraas and Ben Schmidt"
-      title: "Mapping the State of the Union"
-      journal: "The Atlantic"
-      date: "January 18, 2015" 
-      url: "http://www.theatlantic.com/features/archive/2015/01/the-language-of-the-state-of-the-union/384575/"
-      tags:
-        public: true
-	-
-	  citekey: schmidt_data_2013
-      title: "The data shows there's no real crisis"
-      journal: "The New York Times"
-      journal_info: "Room for Debate"
-      date: "November 4, 2013" 
-      url: "http://www.theatlantic.com/features/archive/2015/01/the-language-of-the-state-of-the-union/384575/"
-      tags:
-        public: true
-    -
-      title: The Language of Lincoln
-      journal: The Atlantic
-      date: January 10, 2013
-      url: "http://www.theatlantic.com/entertainment/archive/2013/01/nobody-said-racial-equality-in-1865-the-anachronistic-english-of-lincoln/266990/"
-      tags:
-          public: true
-    -
-      title: The Foreign Language of Mad Men
-      journal: The Atlantic
-      date: March 22, 2012
-      url: "http://www.theatlantic.com/entertainment/archive/2013/01/nobody-said-racial-equality-in-1865-the-anachronistic-english-of-lincoln/266990/"
-      tags:
-        public: true      
-    -
-      title: Prochronisms
-      url: prochronism.com
-      description: "Blog discussing changes in historical language through the lens of anachronisms in popular culture"
-      date: March 2012-present
-      tags:
-        public: true
+  -
+    citekey: schmidt_modeling_2016
+    academic: true
+    twopage: true
+  -
+    citekey: schmidt_digital_2016
+    title: "Do Digital Humanists Need to Understand Algorithms?"
+    journal: Debates in the Digital Humanities 2016
+    journal_info: ed. Matthew Gold and Lauren Klein
+    type: chapter
+    date: 2016
+    place: University of Minnesota Press
+    academic: true
+    twopage: true
+  -
+    citekey: schmidt_plot_2015
+    date: 2015
+    title: "Plot Arceology: A Vector Space Model of Plot"
+    journal: "Proceedings of the 2015 IEEE International Conference on Big Data"
+    academic: true
+    peer_reviewed: true
+    twopage: true
+  -
+    citekey: schmidt_words_2013
+    date: April 2013
+    title: "Words Alone: Dismantling Topic Models in the Humanities"
+    journal: Journal of Digital Humanities
+    journal_info: Vol. 2 No. 1 
+    url: http://journalofdigitalhumanities.org/2-1/words-alone-by-benjamin-m-schmidt/
+    twopage: true
+    academic: true
+  -
+    citekey: schmidt_theory_2012
+    date: April 2012
+    title: "Theory First"
+    journal: Journal of Digital Humanities
+    journal_info: Vol. 1 No. 1
+    twopage: true
+    academic: true
+  -
+    date: November 2010-Present
+    url: sappingattention.blogspot.com
+    title: Sapping Attention
+    description: Blog publishing original research and discussion in digital humanities, data visualization, and text mining
+    academic: true
+    blog: true
+  -
+    date: 2011-Present
+    title: Bookworm
+    url: https://github.com/Bookworm-project
+    description: Interactive website, database, and API
+    twopage: true
+    academic: true
+    software: true
+  -
+    citekey: schmidt_ranking_2007
+    date: July 2007
+    author: "Benjamin MacDonald Schmidt and Matthew Chingos"
+    title: "Ranking Doctoral Programs by Placement: A New Method"
+    journal: "PS: Political Science & Politics"
+    journal_info: Vol 40, pages 523-529
+    twopage: true
+    academic: true
+    peer_reviewed: true
+  -
+    citekey: schmidt_is_2015
+    public: true
+  -
+    author: "Ben Schmidt and Mitch Fraas"
+    title: "The Language of the State of the Union"
+    journal: "The Atlantic"
+    date: "January 18, 2015" 
+    url: "http://www.theatlantic.com/features/archive/2015/01/the-language-of-the-state-of-the-union/384575/"
+    twopage: true
+    public: true
+  -
+    author: "Mitch Fraas and Ben Schmidt"
+    title: "Mapping the State of the Union"
+    journal: "The Atlantic"
+    date: "January 18, 2015" 
+    url: "http://www.theatlantic.com/features/archive/2015/01/the-language-of-the-state-of-the-union/384575/"
+    public: true
+    twopage: true
+  -
+    citekey: schmidt_data_2013
+    title: "The data shows there's no real crisis"
+    journal: "The New York Times"
+    journal_info: "Room for Debate"
+    date: "November 4, 2013" 
+    url: "http://www.theatlantic.com/features/archive/2015/01/the-language-of-the-state-of-the-union/384575/"
+    public: true
+  -
+    title: The Language of Lincoln
+    journal: The Atlantic
+    date: January 10, 2013
+    url: "http://www.theatlantic.com/entertainment/archive/2013/01/nobody-said-racial-equality-in-1865-the-anachronistic-english-of-lincoln/266990/"
+    public: true
+  -
+    title: The Foreign Language of Mad Men
+    journal: The Atlantic
+    date: March 22, 2012
+    url: "http://www.theatlantic.com/entertainment/archive/2013/01/nobody-said-racial-equality-in-1865-the-anachronistic-english-of-lincoln/266990/"
+    public: true    
+  -
+    title: Prochronisms
+    url: prochronism.com
+    description: "Blog discussing changes in historical language through the lens of anachronisms in popular culture"
+    date: March 2012-present
+    public: true
         
 invited_talk:
   -
@@ -175,6 +171,7 @@ invited_talk:
     title: "Historical Data Visualization"
     host: Institute for Quantitative Theory and Methods Data Visualization speaker series
     place: Emory University
+    twopage: true
   -
     date: May 11, 2015
     title: "Plot Arceology"
@@ -185,10 +182,12 @@ invited_talk:
     title: "Reconstructing the Map"
     host: Center for Spatial and Textual Analysis
     place: Stanford University
+    twopage: true
   -
     title: "Aggregate Americans: The US Census Bureau, data visualization, 1880-1940"
     place: Washington University in St Louis
     date: February 26, 2015
+    twopage: true
   -
     date: November 12, 2014
     title: "Applying a grammar of visualization to millions of texts: the Bookworm project"
@@ -199,21 +198,25 @@ invited_talk:
     host: Yale University Library
     place: Yale University
     date: May 12, 2014
+    twopage: true
   -
     title: "Data-Driven Histories: Reinterpreting Nineteenth-Century Data"
     host: Department of History
     place: University of Georgia
     date: April 22, 2014
+    twopage: true
   -
     title: "Data narratives and group dynamics in digital history: a case study in ships' logs"
     host: Digital History symposium and roundtable
     place: University of Nebraska, Lincoln
     date: April 11, 2014
+    twopage: true
   - 
     title: "History for the Digital Future: Digital Forms of Historical Scholarship"
     host: Friday Workshop Series of the Eisenberg Institute for Historical Studies
     place: University of Michigan
     date: January 31, 2014
+    twopage: true
   -
     title: "'Big Data' across Disciplines, from Cultural Studies to Culturomics"
     host: Workshop in History, Culture and Society
@@ -249,7 +252,7 @@ home_institution:
 - 
   title: "What gender's got to do with teaching evaluations."
   place: “Conflict. Civility. Respect. Peace. North­eastern Reflects series on civic sustainability"
-  date: November 4, 201
+  date: November 4, 2015
 -
   title: "Open Access in the Digital Humanities"
   host: Open Access Week event, Northeastern University
@@ -261,11 +264,13 @@ conference:
   host: Digital Humanities 2015 Conference
   place: Sydney, Australia
   date: July 1, 2015
+  twopage: true
 - 
   title: "Historical data revisualization: Turner, Walker, and envisioning the frontier"
   host: Roundtable on data visualization and historical practice
   place: Annual Meeting of the American History Association
   date: January 3, 2015
+  twopage: true
 -
   title: "Bookworm: Building an expressive grammar of humanities text analysis"
   host: The Digital Crucible
@@ -323,6 +328,11 @@ conference:
   date: March 2010
 
 workshop:
+- 
+  title: Classification and the Library
+  host: History Lab group
+  place: Columbia University
+  date: April 19, 2016
 -
   title: Text Analytics for Medical History (Instructor, NEH/NIH workshop)
   host: National Institutes of Health
@@ -459,12 +469,14 @@ service:
 -
   type: "Service to the Profession"
   gigs:
-	-
-      item:  Working Group on Data and History, Social Science Resource Council
+    -
+      item:  Working Group on Big Data and History, Social Science Resource Council
       date: 2015-Present
+      twopage: true
     -
       item: Advisory Board, Culture Analytics
       date: 2015-Present
+      twopage: true
     -
       item:  Grant reviewer, National Endowment for the Humanities
       date: 2014
@@ -513,17 +525,14 @@ service:
     -
       item:  Director, Modern America Workshop, Princeton University
       date: 2007-2008
-	  
-
 competencies: 
 -
-	type: Computing Platforms
-	items: 
-	- "Substantial experience (could lead workshops): R, Python,
-	Javascript, HTML5/CSS, MySQL, D3, Unix administration."
-	- "Research/collaborative use: Haskell, ArcGIS/QGIS, perl, LaTex, JQuery."
+  type: Computing Platforms
+  items: 
+    - "Substantial experience (could lead workshops): R, Python, Javascript, HTML5/CSS, MySQL, D3, Unix administration."
+    - "Research/collaborative use: Haskell, ArcGIS/QGIS, perl, LaTex, JQuery."
 - 
-    type: Languages
-	items: German (intermediate), Spanish (reading), French (reading).
+  type: Languages
+  items: German (intermediate), Spanish (reading), French (reading).
 
 
