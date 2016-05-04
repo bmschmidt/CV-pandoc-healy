@@ -5,25 +5,28 @@
 These are templates designed to do four things:
 
 1. Make a nice [Latex CV modeled on Kieran Healy's template](https://github.com/kjhealy/kjh-vita).
-2. Do it with a clean `.sty` file that separates out content from style, copied from [James Keirstead's model](https://github.com/jkeirstead/jk-vita/tree/master/content)
+2. Do it with a clean `.sty` file that separates out content from style, copied from [James Keirstead's adaptation of Healy's CV](https://github.com/jkeirstead/jk-vita/tree/master/content)
 3. Follow's [Mattia Tezzele's strategy of storing the CV as structured YAML data that can be easily reconfigured, and then compiling the document out of that YAML using Pandoc.](http://mrzool.cc/writing/typesetting-automation/)
 4. Simulataneously allow you to keep up alternate CVs (for instance, a 'short' two-page CV) from a single file.
 
+The last is the most important; it means that I can have a short CV for grants and a long CV for keeping track of everything generated off the same base data; this is otherwise hard.
+
 I've drifted far enough from any of those that it doesn't quite make sense to treat this repo as a fork (of either Healy or Keirstead).
 
-[Here's **an example** of the CV output by this repository.](http://benschmidt.org/SchmidtCV.pdf) Note that you won't be able to build this locally from the repo without a copy of my personal `.bib` file, which stores publications; you'll need to create your own and designate the location in the obvious spot in "curriculum_vitae.yaml".
+[Here's **an example** of the CV output by this repository.](http://benschmidt.org/SchmidtCV.pdf) Note that you won't be able to build this locally from the repo without a copy of my personal `.bib` file, which stores publications; you'll need to create your own and specify the location in the obvious spot in "curriculum_vitae.yaml".
 
 ## Usage
 
-`make` to build my CV in short and long form. Though I don't know why you'd want to build my CV.
+`make` to build my CV in short and long form, sans citations. Though I don't know why you'd want to build my CV.
 
 ### Repurposing.
 
 You could change around some of the details in the YAML file and build
 your own CV. It's likely that you'll also need to define a biblatex
 citation bibliography somewhere (which is done in the first part of
-the YAML block. And you'd probably need to fudge around with the 
-
+the YAML block). And you'd probably need to fudge around with the latex to change
+to citation parameters of your choice; and potentially remake the individual blocks along
+the model I give here.
 
 ## Additions
 
@@ -50,14 +53,14 @@ In my desire to use less latex, I'd much rather be using pandoc and a custom-def
 
 ### YAML pre-processing
 
-The real point of using YAML here is that we could use Python or another scripting language to do some useful pre-processing. This might mean
+An advantage of using YAML here is that we could use Python or another scripting language to do some useful pre-processing. This might mean
   * integrity checks for different item types
   * sorting by date
   * or anything else.
 
-I've currently hard-wired in this distinction between "academic" and "general audience" publications through the tags field. But the YAML could actual be reconfigured to automatically nest the two things from an original flat-level file, which would be much cleaner.
+Keirstead uses R for this purpose; parsing YAML in R sounds a little yucky to me. So python it should be; but for now I like that there's no scripting outside of the pandoc DSL, which is one of the weakest DSLs I've seen. 
 
-The short CV might be identified by having a tag that specifies if something is worth including on a two-page CV.
+I've currently hard-wired in this distinction between "academic" and "general audience" publications through the tags field. But the YAML could actual be reconfigured to automatically nest the two things from an original flat-level file, which would be much cleaner.
 
 ### NSF-style CV
 
