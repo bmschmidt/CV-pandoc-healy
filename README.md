@@ -6,8 +6,8 @@ These are templates designed to do four things:
 
 1. Make a nice [Latex CV modeled on Kieran Healy's template](https://github.com/kjhealy/kjh-vita).
 2. Do it with a clean `.sty` file that separates out content from style, copied from [James Keirstead's adaptation of Healy's CV](https://github.com/jkeirstead/jk-vita/tree/master/content)
-3. Follow's [Mattia Tezzele's strategy of storing the CV as structured YAML data that can be easily reconfigured, and then compiling the document out of that YAML using Pandoc.](http://mrzool.cc/writing/typesetting-automation/)
-4. Simulataneously allow you to keep up alternate CVs (for instance, a 'short' two-page CV) from a single file.
+3. Follow [Mattia Tezzele's strategy of storing the CV as structured YAML data that can be easily reconfigured, and then compiling the document out of that YAML using Pandoc.](http://mrzool.cc/writing/typesetting-automation/)
+4. Simultaneously allow you to keep up alternate CVs (for instance, a 'short' two-page CV and a 'complete' longer version) from a single set of metadata, so you can edit a single file and change both.
 
 The last is the most important; it means that I can have a short CV for grants and a long CV for keeping track of everything generated off the same base data; this is otherwise hard.
 
