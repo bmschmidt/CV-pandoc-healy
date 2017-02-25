@@ -19,7 +19,7 @@ appointment:
         date: August 2013–Present
       - 
         item: Core Faculty, NuLab for Texts, Maps, and Networks
-        date: August 2013–-Present
+        date: August 2013–Present
       -
         item: Affiliate Faculty, Program in Information Design and Visualization
         date: November 2014–Present
@@ -56,9 +56,21 @@ education:
 
 publication:
   -
+    title: "Creating Data: The Origins of Digitization in the American State, 1840--1940"
+    date: "Digital Monograph, in progress"
+    twopage: true
+    academic: true
+  -
     citekey: schmidt_modeling_2016
     academic: true
     twopage: true
+  -
+    date: 2016
+    title: "A public exploratory data analysis of gender bias in teaching evaluations"
+    journal: "Proceedings of the 2016 IEEE Conference on Visualization"
+    academic: true
+    peer_reviewed: true
+    twopage: true    
   -
     citekey: schmidt_digital_2016
     title: "Do Digital Humanists Need to Understand Algorithms?"
@@ -164,8 +176,28 @@ publication:
     description: "Blog discussing changes in historical language through the lens of anachronisms in popular culture"
     date: March 2012-present
     public: true
-        
+
+
+grants:
+- "NEH-Mellon Fellowships for Digital Publication for \"Creating Data,\" 2017-2018. $50,400."
+- Proteus Project, development grant from Mellon Foundation. Join with University of Massachusetts. Northeastern co-director (with David Smith, Ryan Cordell, and Elizabeth Dillon). 2015-2016.
+- Bookworm Project, $350,000 implementation grant from the National Endowment for the Humanities (2014-2016). Joint with University of Illinois and Rice University; Northeastern University project lead.
+- Bookworm Project, $50,000 continuation grant from the Digital Public Library of America (2013). Project developer and grant-writer. 2013.
+
+
 invited_talk:
+  -
+    date: July 29, 2016
+    title: "Visualizing and classifying large digital libraries"
+    host: New York Public Library
+    place: New York City
+    twopage: false
+  -
+    date: June 7, 2016
+    title: "Data Visualization for the Humanities"
+    host: Digital Futures Initiative
+    place: Grinnell College
+    twopage: false
   -
     date: November 12, 2015
     title: "Historical Data Visualization"
@@ -249,9 +281,12 @@ invited_talk:
     date: October 21, 2011
 
 home_institution:
+-
+  title: "The DH/CSS job market. Panelist."
+  date: October 13, 2016
 - 
   title: "What gender's got to do with teaching evaluations."
-  place: “Conflict. Civility. Respect. Peace. North­eastern Reflects series on civic sustainability"
+  place: "Conflict. Civility. Respect. Peace. Northeastern Reflects series on civic sustainability."
   date: November 4, 2015
 -
   title: "Open Access in the Digital Humanities"
@@ -259,6 +294,22 @@ home_institution:
   date: October 22, 2013
 
 conference:
+- 
+  title: A public exploratory data analysis of gender bias in teaching evaluations
+  host: IEEEViz Workshop on Visualization for the Digital Humanities
+  place: Baltimore
+  date: October 24, 2016
+- 
+  title: "Invited presentation"
+  host: Integration of education in the sciences, engineering, and medicine with the arts and humanities at the undergraduate and 
+        graduate levels
+  place: National Academy of Sciences, Cambridge MA
+  date: October 14, 2016
+- 
+  title: "Exploratory Narratives"
+  host: Digital Humanities + Data Journalism conference
+  place: University of Miami
+  date: October 1, 2016
 -
   title: "Data Revisualization as Critical Humanities Practice: Reinterpreting 19th Century Data with Modern Tools"
   host: Digital Humanities 2015 Conference
@@ -361,8 +412,13 @@ workshop:
 
 teaching:
 -
+  title: "Bostonography: Exploring the city through texts, maps, and
+  networks. Co-taught with Ryan Cordell."
+  date: Fall 2016
+  type: Undergraduate
+-
   title: "Texts, Maps, and Networks: Readings and Methods for Digital History"
-  date: Fall 2015
+  date: Fall 2015; Fall 2016
   type: Graduate
 -
   title: "Humanities Data Analysis"
@@ -459,11 +515,6 @@ media_coverage:
   url: "http://artsbeat.blogs.nytimes.com/2013/06/27/quants-ask-what-crisis-in-the-humanities/"
   journal: The New York Times
   date: June 27, 2013
-
-grants:
-- Proteus Project, development grant from Mellon Foundation. Join with University of Massachusetts. Northeastern co-director (with David Smith, Ryan Cordell, and Elizabeth Dillon). 2015-2016.
-- Bookworm Project, $350,000 implementation grant from the National Endowment for the Humanities (2014-2016). Joint with University of Illinois and Rice University; Northeastern University project lead.
-- Bookworm Project, $50,000 continuation grant from the Digital Public Library of America (2013). Project developer and grant-writer. 2013.
 
 service:
 -
