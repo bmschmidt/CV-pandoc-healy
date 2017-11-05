@@ -60,17 +60,17 @@ publication:
     date: "Digital Monograph, in progress"
     twopage: true
     academic: true
+
+  - 
+    title: "Volume on algorithms and computational methods"
+    date: "Editor. \em{Debates in the Digital Humanities} volume: CFP
+    to be circulated in 2018." 
+    twopage: true
+    academic: true
   -
-    citekey: schmidt_modeling_2016
+    citekey: schmidt_modeling_2018
     academic: true
     twopage: true
-  -
-    date: 2016
-    title: "A public exploratory data analysis of gender bias in teaching evaluations"
-    journal: "Proceedings of the 2016 IEEE Conference on Visualization"
-    academic: true
-    peer_reviewed: true
-    twopage: true    
   -
     citekey: schmidt_digital_2016
     title: "Do Digital Humanists Need to Understand Algorithms?"
@@ -179,7 +179,9 @@ publication:
 
 
 grants:
-- "NEH-Mellon Fellowships for Digital Publication for \"Creating Data,\" 2017-2018. $50,400."
+- "NEH-Mellon Fellowships for Digital Publication for \"Creating Data,\" Calendar Year 2018. $50,400."
+- "Columbia University School of International and Public Affairs:
+    Visiting Fellow, Spring 2017"
 - Proteus Project, development grant from Mellon Foundation. Join with University of Massachusetts. Northeastern co-director (with David Smith, Ryan Cordell, and Elizabeth Dillon). 2015-2016.
 - Bookworm Project, $350,000 implementation grant from the National Endowment for the Humanities (2014-2016). Joint with University of Illinois and Rice University; Northeastern University project lead.
 - Bookworm Project, $50,000 continuation grant from the Digital Public Library of America (2013). Project developer and grant-writer. 2013.
@@ -294,6 +296,12 @@ home_institution:
   date: October 22, 2013
 
 conference:
+- 
+  title: "Stable Random Projection: Universal, Minimal Dimensionality Reduction for Books"
+  host: Digital Humanities 2017
+  place: Montreal
+  date: August 2017
+
 - 
   title: A public exploratory data analysis of gender bias in teaching evaluations
   host: IEEEViz Workshop on Visualization for the Digital Humanities
@@ -417,8 +425,12 @@ teaching:
   date: Fall 2016
   type: Undergraduate
 -
+  title: "United States History from 1607 to the present"
+  date: Fall 2017
+  type: Undergraduate
+-
   title: "Texts, Maps, and Networks: Readings and Methods for Digital History"
-  date: Fall 2015; Fall 2016
+  date: Fall 2015; Fall 2016; Fall 2017
   type: Graduate
 -
   title: "Humanities Data Analysis"
@@ -451,6 +463,11 @@ public_history:
 -
   role: Language Consulting
   gigs:
+
+  - 
+    item: "Historical Consultant, King Kong (Broadway Musical)"
+    date: 2017
+
   - 
     item: "Historical Language Consultant, \"Masters of Sex,\" Season 2. Showtime Television."
     date: 2014
@@ -520,6 +537,9 @@ service:
 -
   type: "Service to the Profession"
   gigs:
+    - 
+      item: Advisory board, "What Every1Says." Mellon Foundation-funded project on public discourse around the humanities; PI Alan Liu, University of California, Santa Barbara
+      date: 2017-2019
     -
       item:  Working Group on Big Data and History, Social Science Resource Council
       date: 2015-Present
@@ -543,6 +563,14 @@ service:
 -
   type: "Service to the Department and University"
   gigs:
+    -
+      item: Committee on undergraduate research, College of Social Sciences and Humanities.
+      date: 2016
+
+    -
+      item: Committee on experiential liberal arts, CSSH
+      date: 2015
+
     -
       item:  Graduate Committee, Northeastern University History Department
       date: 2014-16
