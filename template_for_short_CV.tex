@@ -13,7 +13,7 @@ $if(bibliography)$
 \addbibresource{$bibliography$}
 $endif$
 
-\title{}
+\title{$title$}
 \name{$name$}
 % I guess postnoms is like junior? I dunno.
 \postnoms{}
@@ -128,12 +128,5 @@ $service.gigs.item$. $service.gigs.date$.\\[.15cm]
 $endif$
 $endfor$
 $endfor$
-
-
-\section{research competencies}
-$for(competencies)$
-$competencies.type$. $for(competencies.items)$ $competencies.items$$endfor$\\[.15cm]
-$endfor$
-
 
 \end{document}
