@@ -61,21 +61,20 @@ publication:
     date: "Digital Monograph, in progress"
     twopage: true
     academic: true
-
   -
-    citekey: schmidt_algorithms_2020
+    citekey: schmidt\_algorithms\_2020
     twopage: true
     academic: true
   -
-    citekey: schmidt_stable_2018
+    citekey: schmidt\_stable\_2018
     academic: true
     twopage: true
   -
-    citekey: schmidt_modeling_2018
+    citekey: schmidt\_modeling\_2018
     academic: true
     twopage: true
   -
-    citekey: schmidt_digital_2016
+    citekey: schmidt\_digital\_2016
     title: "Do Digital Humanists Need to Understand Algorithms?"
     journal: Debates in the Digital Humanities 2016
     journal_info: ed. Matthew Gold and Lauren Klein
@@ -85,7 +84,7 @@ publication:
     academic: true
     twopage: true
   -
-    citekey: schmidt_plot_2015
+    citekey: schmidt\_plot\_2015
     date: 2015
     title: "Plot Arceology: A Vector Space Model of Plot"
     journal: "Proceedings of the 2015 IEEE International Conference on Big Data"
@@ -93,7 +92,7 @@ publication:
     peer_reviewed: true
     twopage: true
   -
-    citekey: schmidt_words_2013
+    citekey: schmidt\_words\_2013
     date: April 2013
     title: "Words Alone: Dismantling Topic Models in the Humanities"
     journal: Journal of Digital Humanities
@@ -102,7 +101,7 @@ publication:
     twopage: true
     academic: true
   -
-    citekey: schmidt_theory_2012
+    citekey: schmidt\_theory\_2012
     date: April 2012
     title: "Theory First"
     journal: Journal of Digital Humanities
@@ -443,13 +442,12 @@ workshop:
 
 teaching:
 -
-  title: "Bostonography: Exploring the city through texts, maps, and
-  networks. Co-taught with Ryan Cordell."
+  title: "Bostonography: Exploring the city through texts, maps, and networks. Co-taught with Ryan Cordell."
   date: Fall 2016
   type: Undergraduate
 -
   title: "United States History from 1607 to the present"
-  date: Fall 2017
+  date: Spring 2019; Fall 2017
   type: Undergraduate
 -
   title: "Texts, Maps, and Networks: Readings and Methods for Digital History"
@@ -457,7 +455,7 @@ teaching:
   type: Graduate
 -
   title: "Humanities Data Analysis"
-  date: Spring 2015
+  date: Spring 2019; Spring 2015
   type: Graduate
 -
   title: "The Making of Modern America: The United States, 1877-1945"
