@@ -1,4 +1,5 @@
 name: Benjamin MacDonald Schmidt
+title: Curriculum Vita
 address:
     - 219 Meserve Hall
     - Northeastern University
@@ -61,12 +62,14 @@ publication:
     twopage: true
     academic: true
 
-  - 
-    title: "Volume on algorithms and computational methods"
-    date: "Editor. \em{Debates in the Digital Humanities} volume: CFP
-    to be circulated in 2018." 
+  -
+    citekey: schmidt_algorithms_2020
     twopage: true
     academic: true
+  -
+    citekey: schmidt_stable_2018
+    academic: true
+    twopage: true
   -
     citekey: schmidt_modeling_2018
     academic: true
@@ -104,7 +107,7 @@ publication:
     title: "Theory First"
     journal: Journal of Digital Humanities
     journal_info: Vol. 1 No. 1
-    twopage: true
+    twopage: false
     academic: true
   -
     date: November 2010-Present
@@ -118,7 +121,7 @@ publication:
     title: Bookworm
     url: https://github.com/Bookworm-project
     description: Interactive website, database, and API
-    twopage: true
+    twopage: false
     academic: true
     software: true
   -
@@ -135,6 +138,14 @@ publication:
     citekey: schmidt_is_2015
     public: true
   -
+    author: "Ben Schmidt"
+    title: "The Humanities are in Crisis"
+    journal: "The Atlantic"
+    date: "August 23, 2018"
+    url: "https://www.theatlantic.com/ideas/archive/2018/08/the-humanities-face-a-crisisof-confidence/567565/"
+    public: true
+    twopage: true
+  -
     author: "Ben Schmidt and Mitch Fraas"
     title: "The Language of the State of the Union"
     journal: "The Atlantic"
@@ -149,7 +160,7 @@ publication:
     date: "January 18, 2015" 
     url: "http://www.theatlantic.com/features/archive/2015/01/the-language-of-the-state-of-the-union/384575/"
     public: true
-    twopage: true
+    twopage: false
   -
     citekey: schmidt_data_2013
     title: "The data shows there's no real crisis"
@@ -189,6 +200,12 @@ grants:
 
 invited_talk:
   -
+    date: January 28, 2018
+    title: "Reordering the digital library: what do 21st century algorithms make out of 19th century collections"
+    host: "University of North Carolina"
+    place: "Chapel Hill"
+    twopage: true
+  -
     date: July 29, 2016
     title: "Visualizing and classifying large digital libraries"
     host: New York Public Library
@@ -205,7 +222,7 @@ invited_talk:
     title: "Historical Data Visualization"
     host: Institute for Quantitative Theory and Methods Data Visualization speaker series
     place: Emory University
-    twopage: true
+    twopage: false
   -
     date: May 11, 2015
     title: "Plot Arceology"
@@ -221,7 +238,7 @@ invited_talk:
     title: "Aggregate Americans: The US Census Bureau, data visualization, 1880-1940"
     place: Washington University in St Louis
     date: February 26, 2015
-    twopage: true
+    twopage: false
   -
     date: November 12, 2014
     title: "Applying a grammar of visualization to millions of texts: the Bookworm project"
@@ -244,7 +261,7 @@ invited_talk:
     host: Digital History symposium and roundtable
     place: University of Nebraska, Lincoln
     date: April 11, 2014
-    twopage: true
+    twopage: false
   - 
     title: "History for the Digital Future: Digital Forms of Historical Scholarship"
     host: Friday Workshop Series of the Eisenberg Institute for Historical Studies
@@ -302,6 +319,12 @@ conference:
   place: Montreal
   date: August 2017
 
+-
+  title: "Drawing the frontier line at the US Census, 1870-1920."
+  host: Columbia University
+  place: New York
+  date: April 8, 2017
+  
 - 
   title: A public exploratory data analysis of gender bias in teaching evaluations
   host: IEEEViz Workshop on Visualization for the Digital Humanities
@@ -477,6 +500,11 @@ public_history:
 -
   role: TV and Radio Appearances
   gigs:
+
+  -
+    item: "\"Think\" with Krys Boyd, KERA Dallas. \"Go ahead, Major in Philosophy.\""
+    url: "http://think.kera.org/2018/09/10/go-ahead-major-in-philosophy/"
+    date: September 10, 2018
   -
     item: Morning Edition, National Public Radio. Discussing gendered language and teaching evaluations.
     url: "http://www.npr.org/blogs/ed/2015/02/23/386001328/how-we-talk-about-our-teachers"
@@ -538,12 +566,13 @@ service:
   type: "Service to the Profession"
   gigs:
     - 
-      item: Advisory board, "What Every1Says." Mellon Foundation-funded project on public discourse around the humanities; PI Alan Liu, University of California, Santa Barbara
+      item: Advisory board, "What Every1Says." Mellon Foundation-funded project on public discourse around the humanities.
       date: 2017-2019
+      twopage: true
     -
       item:  Working Group on Big Data and History, Social Science Resource Council
       date: 2015-Present
-      twopage: true
+      twopage: false
     -
       item: Advisory Board, Culture Analytics
       date: 2015-Present
@@ -608,8 +637,8 @@ competencies:
 -
   type: Computing Platforms
   items: 
-    - "Substantial experience (could lead workshops): R, Python, Javascript, HTML5/CSS, MySQL, D3, Unix administration."
-    - "Research/collaborative use: Haskell, ArcGIS/QGIS, perl, LaTex, JQuery."
+    - "Substantial experience (could lead workshops): R, Python, Javascript, MySQL, D3."
+    - "Research/collaborative use: HTML5/CSS, Unix administration, Haskell, ArcGIS/QGIS, perl, LaTex, JQuery."
 - 
   type: Languages
   items: German (intermediate), Spanish (reading), French (reading).
