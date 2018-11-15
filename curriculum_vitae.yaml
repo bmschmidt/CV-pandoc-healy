@@ -57,7 +57,7 @@ education:
 
 publication:
   -
-    title: "Creating Data: The Origins of Digitization in the American State, 1840--1940"
+    title: "Creating Data: The Origins of Digitization in the American State, 1840-1940"
     date: "Digital Monograph, in progress"
     twopage: true
     academic: true
@@ -65,6 +65,10 @@ publication:
     citekey: schmidt\_algorithms\_2020
     twopage: true
     academic: true
+  -
+    citekey: schmidt\_history\_2018
+    twopage: false
+    academic: false
   -
     citekey: schmidt\_stable\_2018
     academic: true
@@ -124,7 +128,7 @@ publication:
     academic: true
     software: true
   -
-    citekey: schmidt_ranking_2007
+    citekey: schmidt\_ranking\_2007
     date: July 2007
     author: "Benjamin MacDonald Schmidt and Matthew Chingos"
     title: "Ranking Doctoral Programs by Placement: A New Method"
@@ -134,7 +138,7 @@ publication:
     academic: true
     peer_reviewed: true
   -
-    citekey: schmidt_is_2015
+    citekey: schmidt\_is\_2015
     public: true
   -
     author: "Ben Schmidt"
@@ -161,7 +165,7 @@ publication:
     public: true
     twopage: false
   -
-    citekey: schmidt_data_2013
+    citekey: schmidt\_data\_2013
     title: "The data shows there's no real crisis"
     journal: "The New York Times"
     journal_info: "Room for Debate"
@@ -184,12 +188,12 @@ publication:
     title: Prochronisms
     url: prochronism.com
     description: "Blog discussing changes in historical language through the lens of anachronisms in popular culture"
-    date: March 2012-present
+    date: 2012-2015
     public: true
 
 
 grants:
-- "NEH-Mellon Fellowships for Digital Publication for \"Creating Data,\" Calendar Year 2018. $50,400."
+- "NEH-Mellon Fellowships for Digital Publication for *Creating Data*, Calendar Year 2018. $50,400."
 - "Columbia University School of International and Public Affairs:
     Visiting Fellow, Spring 2017"
 - Proteus Project, development grant from Mellon Foundation. Join with University of Massachusetts. Northeastern co-director (with David Smith, Ryan Cordell, and Elizabeth Dillon). 2015-2016.
@@ -319,7 +323,7 @@ conference:
   date: August 2017
 
 -
-  title: "Drawing the frontier line at the US Census, 1870-1920."
+  title: "Drawing the frontier line at the US Census, 1870-1920"
   host: Columbia University
   place: New York
   date: April 8, 2017
@@ -409,12 +413,21 @@ conference:
   date: March 2010
 
 workshop:
+
+- 
+  title: Thinking Through Word Embeddings for the Humanities
+  place: Carnegie Mellon University
+  date: June, 2018
+- 
+  title: Thinking Through Word Embeddings for the Humanities
+  place: NYC Week of DH
+  date: January, 2018
 - 
   title: Classification and the Library
   host: History Lab group
   place: Columbia University
   date: April 19, 2016
--
+ -
   title: Text Analytics for Medical History (Instructor, NEH/NIH workshop)
   host: National Institutes of Health
   place: Bethesda, MD
@@ -442,7 +455,7 @@ workshop:
 
 teaching:
 -
-  title: "Bostonography: Exploring the city through texts, maps, and networks. Co-taught with Ryan Cordell."
+  title: "Bostonography: Exploring the city through texts, maps, and networks. Co-taught with Ryan Cordell"
   date: Fall 2016
   type: Undergraduate
 -
@@ -531,28 +544,28 @@ public_history:
 
 media_coverage:
 -
-  citekey: "miller_is_2015"
+  citekey: miller\_is\_2015
   author: Miller, Clare Cain
   title: "Is the Professor Bossy or Brilliant? Much Depends on Gender"
   url: "http://www.nytimes.com/2015/02/07/upshot/is-the-professor-bossy-or-brilliant-much-depends-on-gender.html?abt=0002&abg=1"
   journal: The New York Times
   date: February 6, 2015
 -
-  citekey: dewey_when_2014
+  citekey: dewey\_when\_2014
   author: Dewey, Caitlin
   title: "When F-Bombs Went Mainstream, Who Talks about Terrorism, and Other Surprising Cultural Insights from Big Data"
   url: "http://www.washingtonpost.com/news/the-intersect/wp/2014/09/18/when-f-bombs-went-mainstream-who-talks-about-terrorism-and-other-surprising-cultural-insights-from-big-data/"
   journal: The Washington Post
   date: September 18, 2014
 -
-  citekey: hertzberg_nobody_2014
+  citekey: hertzberg\_nobody\_2014
   author: Hertzberg, Hendrik
   title: "Nobody Said That Then!"
   url: "http://www.newyorker.com/online/blogs/hendrikhertzberg/2014/02/nobody-said-that-then-continued.html?intcid=obnetwork"
   journal: The New Yorker Blogs
   date: February 25, 2014
 -
-  citekey: schuessler_quants_2013
+  citekey: schuessler\_quants\_2013
   author: Schuessler, Jennifer
   title: "Quants Ask: What Crisis in the Humanities?"
   url: "http://artsbeat.blogs.nytimes.com/2013/06/27/quants-ask-what-crisis-in-the-humanities/"
@@ -634,7 +647,7 @@ service:
 competencies: 
 -
   type: Computing Platforms
-  items: 
+  items:
     - "Substantial experience (could lead workshops): R, Python, Javascript, MySQL, D3."
     - "Research/collaborative use: HTML5/CSS, Unix administration, Haskell, ArcGIS/QGIS, perl, LaTex, JQuery."
 - 
