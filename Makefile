@@ -11,6 +11,9 @@ validate_yaml:
 	xelatex $*_CV
 	xelatex $*_CV
 
+vc.tex: curriculum_vitae.yaml
+	sh vc.sh
+
 yaml_CV.md: curriculum_vitae.yaml
 # Pandoc can't actually read YAML, just YAML blocks in
 # Markdown. So I give it a document that's just a YAML block,
@@ -19,7 +22,7 @@ yaml_CV.md: curriculum_vitae.yaml
 	cat $< >> $@
 	echo "..." >> $@
 
-%_CV.tex: template_for_%_CV.tex curriculum_vitae.yaml
+%_CV.tex: template_for_%_CV.tex curriculum_vitae.yaml vc.tex
 # Pandoc does the initial compilation to tex; we then latex handle the actual bibliography
 # and pdf creation.
 	echo " " | pandoc --metadata-file curriculum_vitae.yaml --template=$< -t latex > $@
