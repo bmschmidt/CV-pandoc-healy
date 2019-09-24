@@ -316,6 +316,12 @@ home_institution:
   date: October 22, 2013
 
 conference:
+
+-
+  title: "What will the liberal arts look like in 10 years?"
+  host: ITHAKA Next Wave Conference 2018
+  place: New York City
+  date: November 29, 2018
 - 
   title: "Stable Random Projection: Universal, Minimal Dimensionality Reduction for Books"
   host: Digital Humanities 2017
@@ -427,7 +433,7 @@ workshop:
   host: History Lab group
   place: Columbia University
   date: April 19, 2016
- -
+-
   title: Text Analytics for Medical History (Instructor, NEH/NIH workshop)
   host: National Institutes of Health
   place: Bethesda, MD
