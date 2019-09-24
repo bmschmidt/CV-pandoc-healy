@@ -41,9 +41,8 @@ I use the `biblatex-chicago` plugin, which (among other things that I've never g
 There are some complications.
 
 1. Ideally this wouldn't be using biblatex-chicago; it would just use some type of CSL with pandoc-style keys. But AFAICT, you can put a pandoc-style key into the YAML metadata, only into the body text.
-2. Pandoc can't load a yaml file, so instead the CV passes silently into a Markdown file with a huge YAML header and no body text. This is a little kludgy, but works perfectly fine.
-3. For some types (eg, talks) the YAML categories are pretty clear. For others (eg, "Public History") there's just a single entry on 'item.' For nothing is "year" separately defined as a key, which might be nice.
-4. I have no defined style for which items must end with a period and which not. You'll have to proofread. 
+2. For some types (eg, talks) the YAML categories are pretty clear. For others (eg, "Public History") there's just a single entry on 'item.' For nothing is "year" separately defined as a key, which might be nice.
+3. I have no defined style for which items must end with a period and which not. You'll have to proofread. 
 
 ## Next steps.
 
