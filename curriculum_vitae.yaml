@@ -1,36 +1,44 @@
+---
 name: Benjamin MacDonald Schmidt
 title: Curriculum Vita
 address:
-    - 219 Meserve Hall
-    - Northeastern University
-    - 360 Huntington Avenue
-    - Boston, MA 02118
-email: b.schmidt@neu.edu
+    - 20 Cooper Square, Room 538
+    - New York University
+    - New York, NY 10003
+email: bs145@nyu.edu
 twitter: benmschmidt
 www: benschmidt.org
 tel: 609.619.0629
-bibliography: ../../MyLibrary.bib
+bibliography: tmp.bib
 
 appointment:
   -
+    place: New York University
+    items:
+      -
+        item: Clinical Associate Professor of History
+        date: September 2019-Present
+      -
+        item: Director of Digital Humanities
+        date: September 2019-Present
+  -
     place: Northeastern University
     items:
-      - 
+      -
         item: Assistant Professor of History
-        date: August 2013–Present
-      - 
+        date: August 2013–June 2019
+      -
         item: Core Faculty, NuLab for Texts, Maps, and Networks
-        date: August 2013–Present
+        date: August 2013–June 2019
       -
         item: Affiliate Faculty, Program in Information Design and Visualization
-        date: November 2014–Present
-  - 
+        date: November 2014–June 2019
+  -
     place: Harvard University, School of Engineering and Applied Sciences
     items:
       -
         item: Graduate Fellow, Cultural Observatory @ Harvard
         date: 2011–2013
-
 education:
   -
     place: Princeton University
@@ -57,28 +65,56 @@ education:
 
 publication:
   -
+    title: ""
+    journal: "Proceedings of the National Academy of Sciences"
+    date: 2021-11-07
+    twopage: false
+    academic: true
+  -
     title: "Creating Data: The Origins of Digitization in the American State, 1840-1940"
     date: "Digital Monograph, in progress"
     twopage: true
     academic: true
   -
-    citekey: schmidt\_algorithms\_2020
-    twopage: true
+    author: "Peter Organisciak, Grace Therrell, Maggie Ryan, Benjamin MacDonald Schmidt"
+    title: Examining patterns of text reuse in digitized text collections
+    date: 2019-06-02
+    journal: 2019 ACM/IEEE Joint Conference on Digital Libraries (JCDL)
     academic: true
   -
-    citekey: schmidt\_history\_2018
+    title: "Are College Students Killing Townies?"
+    author: "Benjamin Schmidt"
+    journal: "The Chronicle of Higher Education"
+    date: 2020-12-17
     twopage: false
     academic: false
+    public: true
   -
-    citekey: schmidt\_stable\_2018
+    fcitekey: schmidt\_history\_2018
+    title: "The History Major since the Great Recession"
+    author: "Benjamin Schmidt"
+    journal: "Perspectives"
+    date: 2018 December
+    twopage: false
+    academic: false
+    public: true
+  -
+    fcitekey: schmidt\_stable\_2018
+    title: "Stable Random Projection: Lightweight, General-Purpose Dimensionality Reduction for Digitized Libraries"
+    date: 2018-09-30
+    journal: "Journal of Cultural Analytics"
+    doi: 10.22148/16.025
     academic: true
     twopage: true
   -
-    citekey: schmidt\_modeling\_2018
+    fcitekey: schmidt\_modeling\_2018
+    title: "Modeling Time,"
+    journal: "in 'The Shape of Data in Digital Humanities,' ed. Julia Flanders and Fotis Jannidis"
+    date: (Routledge, 2018)
     academic: true
-    twopage: true
+    twopage: false
   -
-    citekey: schmidt\_digital\_2016
+    fcitekey: schmidt\_digital\_2016
     title: "Do Digital Humanists Need to Understand Algorithms?"
     journal: Debates in the Digital Humanities 2016
     journal_info: ed. Matthew Gold and Lauren Klein
@@ -88,7 +124,7 @@ publication:
     academic: true
     twopage: true
   -
-    citekey: schmidt\_plot\_2015
+    fcitekey: schmidt\_plot\_2015
     date: 2015
     title: "Plot Arceology: A Vector Space Model of Plot"
     journal: "Proceedings of the 2015 IEEE International Conference on Big Data"
@@ -96,16 +132,16 @@ publication:
     peer_reviewed: true
     twopage: true
   -
-    citekey: schmidt\_words\_2013
+    fcitekey: schmidt\_words\_2013
     date: April 2013
     title: "Words Alone: Dismantling Topic Models in the Humanities"
     journal: Journal of Digital Humanities
-    journal_info: Vol. 2 No. 1 
+    journal_info: Vol. 2 No. 1
     url: http://journalofdigitalhumanities.org/2-1/words-alone-by-benjamin-m-schmidt/
     twopage: true
     academic: true
   -
-    citekey: schmidt\_theory\_2012
+    fcitekey: schmidt\_theory\_2012
     date: April 2012
     title: "Theory First"
     journal: Journal of Digital Humanities
@@ -128,7 +164,7 @@ publication:
     academic: true
     software: true
   -
-    citekey: schmidt\_ranking\_2007
+    fcitekey: schmidt\_ranking\_2007
     date: July 2007
     author: "Benjamin MacDonald Schmidt and Matthew Chingos"
     title: "Ranking Doctoral Programs by Placement: A New Method"
@@ -138,8 +174,11 @@ publication:
     academic: true
     peer_reviewed: true
   -
-    citekey: schmidt\_is\_2015
+    fcitekey: schmidt\_is\_2015
+    title: "Is It Fair to Rate Professors Online?, The New York Times (Room for debate)"
+    date: December 16, 2015
     public: true
+    twopage: false
   -
     author: "Ben Schmidt"
     title: "The Humanities are in Crisis"
@@ -152,7 +191,7 @@ publication:
     author: "Ben Schmidt and Mitch Fraas"
     title: "The Language of the State of the Union"
     journal: "The Atlantic"
-    date: "January 18, 2015" 
+    date: "January 18, 2015"
     url: "http://www.theatlantic.com/features/archive/2015/01/the-language-of-the-state-of-the-union/384575/"
     twopage: true
     public: true
@@ -160,16 +199,16 @@ publication:
     author: "Mitch Fraas and Ben Schmidt"
     title: "Mapping the State of the Union"
     journal: "The Atlantic"
-    date: "January 18, 2015" 
+    date: "January 18, 2015"
     url: "http://www.theatlantic.com/features/archive/2015/01/the-language-of-the-state-of-the-union/384575/"
     public: true
     twopage: false
   -
-    citekey: schmidt\_data\_2013
+    fcitekey: schmidt\_data\_2013
     title: "The data shows there's no real crisis"
     journal: "The New York Times"
     journal_info: "Room for Debate"
-    date: "November 4, 2013" 
+    date: "November 4, 2013"
     url: "http://www.theatlantic.com/features/archive/2015/01/the-language-of-the-state-of-the-union/384575/"
     public: true
   -
@@ -183,7 +222,7 @@ publication:
     journal: The Atlantic
     date: March 22, 2012
     url: "http://www.theatlantic.com/entertainment/archive/2013/01/nobody-said-racial-equality-in-1865-the-anachronistic-english-of-lincoln/266990/"
-    public: true    
+    public: true
   -
     title: Prochronisms
     url: prochronism.com
@@ -193,6 +232,8 @@ publication:
 
 
 grants:
+- "Asylum Lab, NYU Center for the Humanities"
+- "Similarity and Duplication in Digital Libraries. IMLS grant. Co-PI; Peter Organisciak, University of Denver."
 - "NEH-Mellon Fellowships for Digital Publication for *Creating Data*, Calendar Year 2018. $50,400."
 - "Columbia University School of International and Public Affairs:
     Visiting Fellow, Spring 2017"
@@ -202,6 +243,17 @@ grants:
 
 
 invited_talk:
+  - 
+    date: March 13, 2020 (Cancelled due to COVID-19)
+    title: "The Humanities in the Age of STEM"
+    host: American Council of Learned Societies
+    twopage: false
+  -
+    date: January 14, 2020
+    title: "Data in search of an argument"
+    host: "History as a Data Science Workshop (guest)"
+    place: "Columbia University, New York"
+    twopage: false
   -
     date: January 28, 2018
     title: "Reordering the digital library: what do 21st century algorithms make out of 19th century collections"
@@ -265,7 +317,7 @@ invited_talk:
     place: University of Nebraska, Lincoln
     date: April 11, 2014
     twopage: false
-  - 
+  -
     title: "History for the Digital Future: Digital Forms of Historical Scholarship"
     host: Friday Workshop Series of the Eisenberg Institute for Historical Studies
     place: University of Michigan
@@ -286,17 +338,17 @@ invited_talk:
     host: Digital Humanities and the Americanist Seminar, Center for Cultural Analysis
     place: Rutgers University
     date: January 31, 2013
-  - 
+  -
     title: "Humanities Research with Digital Libraries"
     host: ITHAKA S+R and Jstor teams, ITHAKA building
     place: New York City
     date: April 16, 2012
-  - 
+  -
     title: "A History of Attention"
     host: Emily Harvey Foundation
     place: New York City
     date: March 17, 2012
-  - 
+  -
     title: "Bookworm"
     host: Beta Sprint Competition Selection, Digital Public Library of America Plenary Meeting
     place: Washington, DC
@@ -306,7 +358,7 @@ home_institution:
 -
   title: "The DH/CSS job market. Panelist."
   date: October 13, 2016
-- 
+-
   title: "What gender's got to do with teaching evaluations."
   place: "Conflict. Civility. Respect. Peace. Northeastern Reflects series on civic sustainability."
   date: November 4, 2015
@@ -316,13 +368,17 @@ home_institution:
   date: October 22, 2013
 
 conference:
-
+-
+  title: "Two Volumes: the Lessons of Time on the Cross"
+  host: American Historical Association
+  place: Chicago
+  date: January 2019
 -
   title: "What will the liberal arts look like in 10 years?"
   host: ITHAKA Next Wave Conference 2018
   place: New York City
   date: November 29, 2018
-- 
+-
   title: "Stable Random Projection: Universal, Minimal Dimensionality Reduction for Books"
   host: Digital Humanities 2017
   place: Montreal
@@ -333,19 +389,19 @@ conference:
   host: Columbia University
   place: New York
   date: April 8, 2017
-  
-- 
+
+-
   title: A public exploratory data analysis of gender bias in teaching evaluations
   host: IEEEViz Workshop on Visualization for the Digital Humanities
   place: Baltimore
   date: October 24, 2016
-- 
+-
   title: "Invited presentation"
-  host: Integration of education in the sciences, engineering, and medicine with the arts and humanities at the undergraduate and 
+  host: Integration of education in the sciences, engineering, and medicine with the arts and humanities at the undergraduate and
         graduate levels
   place: National Academy of Sciences, Cambridge MA
   date: October 14, 2016
-- 
+-
   title: "Exploratory Narratives"
   host: Digital Humanities + Data Journalism conference
   place: University of Miami
@@ -356,7 +412,7 @@ conference:
   place: Sydney, Australia
   date: July 1, 2015
   twopage: true
-- 
+-
   title: "Historical data revisualization: Turner, Walker, and envisioning the frontier"
   host: Roundtable on data visualization and historical practice
   place: Annual Meeting of the American History Association
@@ -392,7 +448,7 @@ conference:
   host: Panel on Digital Approaches to Conceptual History, 15th International Conference on the History of Concepts
   place: Helsinki, Finland
   date: August 24, 2012
-- 
+-
   title: "Drifting Metaphors: Using Digital Libraries to Describe Discursive Change"
   host: "Panel on Computational Approaches to Nineteenth-Century Literary History, Conference of the American Literature Association"
   place: San Francisco
@@ -420,15 +476,19 @@ conference:
 
 workshop:
 
-- 
+-
+  title: Text Mining the Digital Library with Hathi Trust Extended Features
+  place: NYC Week of DH
+  date: January, 2020
+-
   title: Thinking Through Word Embeddings for the Humanities
   place: Carnegie Mellon University
   date: June, 2018
-- 
+-
   title: Thinking Through Word Embeddings for the Humanities
   place: NYC Week of DH
   date: January, 2018
-- 
+-
   title: Classification and the Library
   host: History Lab group
   place: Columbia University
@@ -438,17 +498,17 @@ workshop:
   host: National Institutes of Health
   place: Bethesda, MD
   date: April 11, 2016
-- 
+-
   title: An Introduction to Text Analysis for Historians
   host: Digital History Workshop Sessions, Annual Meeting of the American Historical Association
   place: New York
   date: January 2, 2015
-- 
+-
   title: Global Literary Networks Work Retreat
   host: Neubauer Collegium for Culture and Society
   place: University of Chicago
   date: December 4-5, 2014
-- 
+-
   title: 'Doing Digital History: A Graduate Student Workshop'
   place: University of Georgia
   date: April 21, 2014
@@ -460,6 +520,22 @@ workshop:
 
 
 teaching:
+-
+  title: "Introduction to Programming"
+  date: Fall 2020
+  type: Graduate
+- 
+  title: "The History of Big Data"
+  date: Spring 2020
+  type: Undergraduate
+-
+  title: "Working with Data"
+  date: Spring 2020, Spring 2021
+  type: Graduate
+- 
+  title: "Asylum in Crisis. Co-taught with Sibylle Fischer and Ellen Noonan"
+  date: Spring 2021
+  type: Undergraduate
 -
   title: "Bostonography: Exploring the city through texts, maps, and networks. Co-taught with Ryan Cordell"
   date: Fall 2016
@@ -500,15 +576,14 @@ public_history:
   -
     item: American Whaling exhibits at the New Bedford Whaling Museum
     date: 2014-2015
+  -
+    item: Mapping the Frontier, Boston Public Library
+    date: 2019
 -
   role: Language Consulting
   gigs:
 
-  - 
-    item: "Historical Consultant, King Kong (Broadway Musical)"
-    date: 2017
-
-  - 
+  -
     item: "Historical Language Consultant, \"Masters of Sex,\" Season 2. Showtime Television."
     date: 2014
   -
@@ -517,7 +592,10 @@ public_history:
 -
   role: TV and Radio Appearances
   gigs:
-
+  - 
+    item: Central Standard, KCUR Kansas City, "Is History Dying?"
+    url: https://www.kcur.org/show/central-standard/2019-01-30/seg-1-is-history-dying-seg-2-the-marie-kondo-craze
+    date: January 30, 2019
   -
     item: "\"Think\" with Krys Boyd, KERA Dallas. \"Go ahead, Major in Philosophy.\""
     url: "http://think.kera.org/2018/09/10/go-ahead-major-in-philosophy/"
@@ -544,34 +622,34 @@ public_history:
     item: Lexicon Valley podcast, Slate.com.
     url: "http://www.slate.com/articles/podcasts/lexicon_valley/2012/06/lexicon_valley_anachronisms_in_mad_men_downton_abbey_and_edith_wharton_.html"
     date: June 11, 2012
-  - 
+  -
     item: Weekends with Alex Witt, MSNBC. Discussing Mad Men.
     date: March 24, 2012
 
 media_coverage:
 -
-  citekey: miller\_is\_2015
+  fcitekey: miller\_is\_2015
   author: Miller, Clare Cain
   title: "Is the Professor Bossy or Brilliant? Much Depends on Gender"
   url: "http://www.nytimes.com/2015/02/07/upshot/is-the-professor-bossy-or-brilliant-much-depends-on-gender.html?abt=0002&abg=1"
-  journal: The New York Times
+  journal: "*The New York Times*"
   date: February 6, 2015
 -
-  citekey: dewey\_when\_2014
-  author: Dewey, Caitlin
+  fcitekey: dewey\_when\_2014
+  author: "*Dewey, Caitlin*"
   title: "When F-Bombs Went Mainstream, Who Talks about Terrorism, and Other Surprising Cultural Insights from Big Data"
   url: "http://www.washingtonpost.com/news/the-intersect/wp/2014/09/18/when-f-bombs-went-mainstream-who-talks-about-terrorism-and-other-surprising-cultural-insights-from-big-data/"
-  journal: The Washington Post
+  journal: "*The Washington Post*"
   date: September 18, 2014
 -
-  citekey: hertzberg\_nobody\_2014
+  fcitekey: hertzberg\_nobody\_2014
   author: Hertzberg, Hendrik
   title: "Nobody Said That Then!"
   url: "http://www.newyorker.com/online/blogs/hendrikhertzberg/2014/02/nobody-said-that-then-continued.html?intcid=obnetwork"
   journal: The New Yorker Blogs
   date: February 25, 2014
 -
-  citekey: schuessler\_quants\_2013
+  fcitekeyl: schuessler\_quants\_2013
   author: Schuessler, Jennifer
   title: "Quants Ask: What Crisis in the Humanities?"
   url: "http://artsbeat.blogs.nytimes.com/2013/06/27/quants-ask-what-crisis-in-the-humanities/"
@@ -582,7 +660,7 @@ service:
 -
   type: "Service to the Profession"
   gigs:
-    - 
+    -
       item: Advisory board, "What Every1Says." Mellon Foundation-funded project on public discourse around the humanities.
       date: 2017-2019
       twopage: true
@@ -609,6 +687,21 @@ service:
 -
   type: "Service to the Department and University"
   gigs:
+    - 
+      item: DH Steering Committee
+      date: 2019-present
+    -
+      item: Faculty Advisory Board, Research technology
+      date: 2019-present
+    - 
+      item: University committee on course evaluations
+      date: 2020
+    -
+      item: Polonsky Fellowship Selection Committee
+      date: 2020
+    - 
+      item: Digital Humanities Seed Grant Committee, co-chair
+      date: 2019-present
     -
       item: Committee on undergraduate research, College of Social Sciences and Humanities.
       date: 2016
@@ -650,14 +743,14 @@ service:
     -
       item:  Director, Modern America Workshop, Princeton University
       date: 2007-2008
-competencies: 
+competencies:
 -
   type: Computing Platforms
   items:
     - "Substantial experience (could lead workshops): R, Python, Javascript, MySQL, D3."
     - "Research/collaborative use: HTML5/CSS, Unix administration, Haskell, ArcGIS/QGIS, perl, LaTex, JQuery."
-- 
+-
   type: Languages
   items: German (intermediate), Spanish (reading), French (reading).
 
-
+...

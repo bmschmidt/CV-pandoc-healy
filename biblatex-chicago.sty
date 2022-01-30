@@ -1,0 +1,153 @@
+% $Id: biblatex-chicago.sty,v 0.1.1.61 2017/04/19 13:08:02 dfussner Exp $
+
+% Copyright (c) 2009-2017 David Fussner.  This package is
+% author-maintained.
+%
+% This work may be copied, distributed and/or modified under the
+% conditions of the LaTeX Project Public License, either version 1.3 of
+% this license or (at your option) any later version.  The latest
+% version of this license is in http://www.latex-project.org/lppl.txt
+% and version 1.3 or later is part of all distributions of LaTeX version
+% 2005/12/01 or later.  This software is provided as is,
+% without warranty of any kind, either expressed or implied, including,
+% but not limited to, the implied warranties of merchantability and
+% fitness for a particular purpose.
+
+\ProvidesPackage{biblatex-chicago}[2017/04/19 v 3.7 biblatex style]
+
+\RequirePackage{etoolbox}
+
+\DeclareOption{authordate}{\def\cms@style{authordate}}
+\DeclareOption{notes}{\def\cms@style{notes}}
+\DeclareOption{authordate-trad}{\def\cms@style{authordatetrad}}
+\DeclareOption{authordate15}{\def\cms@style{authordateold}}
+\DeclareOption{notes15}{\def\cms@style{notesold}}
+\DeclareOption*{\eappto\cms@options{\CurrentOption,}}
+\let\cms@options\empty
+\ExecuteOptions{notes}%
+
+\newtoggle{cms@nomark}
+
+\DeclareOption{footmarkoff}{\global\toggletrue{cms@nomark}}
+
+\DeclareOption{natbib}{%
+  \PassOptionsToPackage{natbib}{biblatex}}
+
+\DeclareOption{backend=biber}{%
+  \PassOptionsToPackage{\CurrentOption}{biblatex}}%
+
+\DeclareOption{backend=bibtex}{%
+  \PassOptionsToPackage{\CurrentOption}{biblatex}%
+  \def\blx@sorting@cms{1}}%
+
+\DeclareOption{backend=bibtex8}{%
+  \PassOptionsToPackage{\CurrentOption}{biblatex}%
+  \def\blx@sorting@cms{1}}%
+
+\DeclareOption{backend=bibtexu}{%
+  \PassOptionsToPackage{\CurrentOption}{biblatex}%
+  \def\blx@sorting@cms{1}}%
+
+\ProcessOptions*
+
+\def\cms@authordate{%
+  \RequirePackage[style=chicago-authordate]{biblatex}%
+  \ExecuteBibliographyOptions{%
+    pagetracker=true,autocite=inline,alldates=comp,
+    uniquename=minfull,useeditor=true,usetranslator=true,usenamec=true,
+    ibidtracker=constrict,sorting=cms,punctfont,cmslos=true,nodates,
+    uniquelist=minyear,maxbibnames=10,minbibnames=7,sortcase=false,
+    abbreviate=false,dateabbrev=false,avdate=true}}
+
+\def\cms@notes{%
+  \RequirePackage[style=chicago-notes]{biblatex}%
+  \ExecuteBibliographyOptions{%
+    pagetracker=true,autocite=footnote,abbreviate=false,alldates=comp,
+    citetracker=true,ibidtracker=constrict,usetranslator=true,
+    usenamec=true,loccittracker=constrict,dateabbrev=false,
+    maxbibnames=10,minbibnames=7,sorting=cms,sortcase=false}}
+
+\def\cms@authordatetrad{%
+  \RequirePackage[style=chicago-authordate-trad]{biblatex}%
+  \ExecuteBibliographyOptions{%
+    pagetracker=true,autocite=inline,alldates=comp,
+    uniquename=minfull,useeditor=true,usetranslator=true,usenamec=true,
+    ibidtracker=constrict,sorting=cms,punctfont,cmslos=true,nodates,
+    uniquelist=minyear,maxbibnames=10,minbibnames=7,sortcase=false,
+    abbreviate=false,dateabbrev=false,avdate=true}}
+
+\def\cms@authordateold{%
+  \RequirePackage[style=chicago-authordate15]{biblatex}%
+  \ExecuteBibliographyOptions{%
+    pagetracker=true,autocite=inline,alldates=comp,
+    uniquename=minfull,useeditor=true,usetranslator=true,usecompiler=true,
+    ibidtracker=constrict,sorting=cms,punctfont,cmslos=true,nodates,
+    uniquelist=minyear,maxbibnames=10,minbibnames=7,sortcase=false}}
+
+\def\cms@notesold{%
+  \RequirePackage[style=chicago-notes15]{biblatex}%
+  \ExecuteBibliographyOptions{%
+    pagetracker=true,autocite=footnote,abbreviate=false,alldates=comp,
+    citetracker=true,ibidtracker=constrict,usetranslator=true,
+    usecompiler=true,loccittracker=constrict,dateabbrev=false,
+    maxbibnames=10,minbibnames=7}}
+
+\csuse{cms@\cms@style}
+\undef\cms@authordate
+\undef\cms@notes
+\undef\cms@authordatetrad
+\undef\cms@authordateold
+\undef\cms@notesold
+\expandafter\ExecuteBibliographyOptions\expandafter{\cms@options}
+
+\setlength{\bibitemsep}{0.5\baselineskip plus 0.5\baselineskip}
+\setlength{\bibhang}{2em}
+\setlength{\lositemsep}{0.25\baselineskip plus 0.25\baselineskip}
+
+\setcounter{biburllcpenalty}{5000}
+\setcounter{biburlucpenalty}{9000}
+\setcounter{biburlnumpenalty}{9000}
+
+\renewcommand*{\bibnamedash}{\rule[.4ex]{3em}{.6pt}}
+
+\iftoggle{cms@nomark}
+{}
+{\@ifclassloaded{memoir}%
+  {\blx@warning@noline{%
+      Since you are using the 'memoir' class,\MessageBreak
+      I'm leaving the formatting of the foot- and/or\MessageBreak
+      end-note mark and text to you.}}%
+  {\renewcommand\@makefntext[1]{% Provides in-line footnote marks
+      \setlength\parindent{1em}%
+      \noindent
+      \makebox[2.3em][r]{\@thefnmark.\,\,}#1}
+    \@ifpackageloaded{endnotes}% Provides in-line endnote marks
+    {\def\enotesize{\small}% This size recommended by the Manual
+      \renewcommand{\enoteformat}{%
+        \renewcommand{\makeenmark}{%
+          \hbox{\theenmark.\,\,}}
+        \rightskip\z@ \leftskip\z@ \parindent=2.3em
+        \leavevmode\llap{\makeenmark}}}
+    {}}}
+
+\@ifpackageloaded{babel}
+{\ifthenelse{\equal{\languagename}{american}}
+  {\DeclareLanguageMapping{american}{cms-american}}%
+  {\ifthenelse{\equal{\languagename}{english}}%
+    {\DeclareLanguageMapping{english}{cms-american}}%
+    {\DeclareLanguageMapping{american}{cms-american}}}}%
+{\DeclareLanguageMapping{english}{cms-american}}
+
+\DeclareLanguageMapping{british}{cms-british}
+\DeclareLanguageMapping{german}{cms-german}
+\DeclareLanguageMapping{french}{cms-french}
+\DeclareLanguageMapping{finnish}{cms-finnish}
+\DeclareLanguageMapping{ngerman}{cms-ngerman}
+\DeclareLanguageMapping{icelandic}{cms-icelandic}
+\DeclareLanguageMapping{norsk}{cms-norsk}
+\DeclareLanguageMapping{nynorsk}{cms-nynorsk}
+\DeclareLanguageMapping{swedish}{cms-swedish}
+
+\ifundef\bbl@loaded{\let\bbl@loaded\@empty}{}% For old versions of babel
+
+\endinput
