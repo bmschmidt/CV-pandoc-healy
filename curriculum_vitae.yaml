@@ -1,6 +1,6 @@
 ---
 name: Benjamin MacDonald Schmidt
-title: Curriculum Vita
+title: ""
 address:
     - 20 Cooper Square, Room 538
     - New York University
@@ -18,18 +18,33 @@ appointment:
       -
         item: Clinical Associate Professor of History
         date: September 2019-Present
+        description: |
+           Teach and research at intersection of history and data science. Published articles in
+           *Journal of Information Science and Technology*, *Proceedings of the National 
+           Academy of Sciences*.
+           Co-directed Humanities Lab group detailing issues around data collection and migrant records.
       -
         item: Director of Digital Humanities
         date: September 2019-Present
+        description: |
+          Launched and oversaw first three years of 10-year, $1,000,000 seed grant program.
+          Launched and secured funding for new summer graduate fellowship.
+          Direct Graduate Certificate program in Digital Humanities inside 
+          Graduate School of Arts and Sciences.
+          Serve on research computing faculty advisory board setting university-wide technology policy.
   -
     place: Northeastern University
     items:
       -
         item: Assistant Professor of History
         date: August 2013–June 2019
+        description: |
+          Taught and supervised staff in large lecture classes and graduate students. Constructed 
+          data visualizations and research under grants and fellowships.
       -
         item: Core Faculty, NuLab for Texts, Maps, and Networks
         date: August 2013–June 2019
+        description: Developed graduate curriculum in digital humanities.
       -
         item: Affiliate Faculty, Program in Information Design and Visualization
         date: November 2014–June 2019
@@ -39,6 +54,18 @@ appointment:
       -
         item: Graduate Fellow, Cultural Observatory @ Harvard
         date: 2011–2013
+        description: Led group building data visualization and analysis software *Bookworm* and conducted
+           independent research in digital humanities.
+  - place: American Academy of Arts and Sciences
+    items: 
+    -
+      item: Program Assistant/Program Associate
+      date: November 2003-August 2005
+      description: |
+         Researched, performed data analysis, and wrote descriptions
+         of quantitative data for prototype edition of the Academy's now-
+         successful *Humanities Indicators*.  
+       
 education:
   -
     place: Princeton University
@@ -65,11 +92,20 @@ education:
 
 publication:
   -
-    title: ""
+    title: "Uncontrolled corpus composition drives an apparent surge in cognitive distortions. Benjamin Schmidt, Steven T. Piantadosi, Kyle Mahowald. Proceedings of the National Academy of Sciences Nov 2021, 118 (45) e2115010118; DOI: 10.1073/pnas.2115010118."
     journal: "Proceedings of the National Academy of Sciences"
-    date: 2021-11-07
-    twopage: false
+    date: 2021-11
+    twopage: true
     academic: true
+    resume: true
+  - 
+    author: "Organisciak, P., Schmidt, B. M., & Downie, J. S."
+    title: "Giving shape to large digital libraries through exploratory data analysis."
+    journal: "Journal of the Association for Information Science and Technology, 73( 2), 317– 332."
+    doi: "https://doi.org/10.1002/asi.24547"
+    date: 2021-09
+    academic: true
+    resume: true
   -
     title: "Creating Data: The Origins of Digitization in the American State, 1840-1940"
     date: "Digital Monograph, in progress"
@@ -81,6 +117,7 @@ publication:
     date: 2019-06-02
     journal: 2019 ACM/IEEE Joint Conference on Digital Libraries (JCDL)
     academic: true
+    twopage: true
   -
     title: "Are College Students Killing Townies?"
     author: "Benjamin Schmidt"
@@ -98,6 +135,7 @@ publication:
     twopage: false
     academic: false
     public: true
+    resume: true
   -
     fcitekey: schmidt\_stable\_2018
     title: "Stable Random Projection: Lightweight, General-Purpose Dimensionality Reduction for Digitized Libraries"
@@ -131,6 +169,7 @@ publication:
     academic: true
     peer_reviewed: true
     twopage: true
+    resume: true
   -
     fcitekey: schmidt\_words\_2013
     date: April 2013
@@ -173,6 +212,7 @@ publication:
     twopage: true
     academic: true
     peer_reviewed: true
+    resume: true
   -
     fcitekey: schmidt\_is\_2015
     title: "Is It Fair to Rate Professors Online?, The New York Times (Room for debate)"
@@ -187,6 +227,7 @@ publication:
     url: "https://www.theatlantic.com/ideas/archive/2018/08/the-humanities-face-a-crisisof-confidence/567565/"
     public: true
     twopage: true
+    resume: true
   -
     author: "Ben Schmidt and Mitch Fraas"
     title: "The Language of the State of the Union"
@@ -232,15 +273,27 @@ publication:
 
 
 grants:
-- "Asylum Lab, NYU Center for the Humanities"
-- "Similarity and Duplication in Digital Libraries. IMLS grant. Co-PI; Peter Organisciak, University of Denver."
-- "NEH-Mellon Fellowships for Digital Publication for *Creating Data*, Calendar Year 2018. $50,400."
-- "Columbia University School of International and Public Affairs:
-    Visiting Fellow, Spring 2017"
-- Proteus Project, development grant from Mellon Foundation. Join with University of Massachusetts. Northeastern co-director (with David Smith, Ryan Cordell, and Elizabeth Dillon). 2015-2016.
-- Bookworm Project, $350,000 implementation grant from the National Endowment for the Humanities (2014-2016). Joint with University of Illinois and Rice University; Northeastern University project lead.
-- Bookworm Project, $50,000 continuation grant from the Digital Public Library of America (2013). Project developer and grant-writer. 2013.
-
+- 
+  resume: false
+  description: "Asylum Lab, NYU Center for the Humanities"
+- 
+  description: "Similarity and Duplication in Digital Libraries. IMLS grant. Co-PI; Peter Organisciak, University of Denver."
+  resume: true
+- 
+  description: "NEH-Mellon Fellowships for Digital Publication for *Creating Data*, Calendar Year 2018. $50,400."
+  resume: false
+- 
+  description: "Columbia University School of International and Public Affairs: Visiting Fellow, Spring 2017"
+  resume: false
+- 
+  description: Proteus Project, development grant from Mellon Foundation. Join with University of Massachusetts. Northeastern co-director (with David Smith, Ryan Cordell, and Elizabeth Dillon). 2015-2016.
+  resume: false
+- 
+  description: Bookworm Project, $350,000 implementation grant from the National Endowment for the Humanities (2014-2016). Joint with University of Illinois and Rice University; Northeastern University project lead.
+  resume: true
+- 
+  description: Bookworm Project, $50,000 continuation grant from the Digital Public Library of America (2013). Project developer and grant-writer. 2013.
+  resume: false
 
 invited_talk:
   - 
@@ -655,6 +708,7 @@ media_coverage:
   url: "http://artsbeat.blogs.nytimes.com/2013/06/27/quants-ask-what-crisis-in-the-humanities/"
   journal: The New York Times
   date: June 27, 2013
+  resume: true
 
 service:
 -
@@ -666,7 +720,7 @@ service:
       twopage: true
     -
       item:  Working Group on Big Data and History, Social Science Resource Council
-      date: 2015-Present
+      date: 2015-2018
       twopage: false
     -
       item: Advisory Board, Culture Analytics
@@ -674,7 +728,7 @@ service:
       twopage: true
     -
       item:  Grant reviewer, National Endowment for the Humanities
-      date: 2014
+      date: 2014, 2019
     -
       item:  Digital Content Advisor, The American Yawp, Online History Textbook
       date: 2014-Present
@@ -705,13 +759,11 @@ service:
     -
       item: Committee on undergraduate research, College of Social Sciences and Humanities.
       date: 2016
-
     -
       item: Committee on experiential liberal arts, CSSH
       date: 2015
-
     -
-      item:  Graduate Committee, Northeastern University History Department
+      item: Graduate Committee, Northeastern University History Department
       date: 2014-16
     -
       item:  Faculty Search Committee, Northeastern University
@@ -743,6 +795,26 @@ service:
     -
       item:  Director, Modern America Workshop, Princeton University
       date: 2007-2008
+software:
+- 
+  program: Bookworm
+  language: Python
+  url: github.com/Bookworm-project/BookwormDB
+  description: Visualization and statistical analysis API for nonconsumptive analysis of massive textual 
+     corpora. Used by Hathi Trust Research Center, Yale University Digital Scholarship, Columbia History Lab, etc.
+-
+  program: WordVectors
+  language: R
+  url: github.com/bmschmidt/wordVectors
+  description: Widely used R package for creation and analysis of word2vec and other word embedding models.
+- 
+  program: Deepscatter
+  language: Javascript/WebGL
+  url: github.com/CreatingData/deepscatter
+  description: Data tiling to display zoomable D3 scatterplots with tens of millions of items in browser.
+    Used for work at Library of Congress, University of Tuebingen, Nomic Software.
+
+
 competencies:
 -
   type: Computing Platforms

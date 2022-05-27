@@ -1,14 +1,14 @@
 
-all: validate_yaml long_CV.pdf short_CV.pdf
+all: validate_yaml long_CV.pdf short_CV.pdf federal_CV.pdf
 
 SchmidtCV.pdf:
 	cp long_CV.pdf $@
 
 validate_yaml:
-	@python -c 'import yaml,sys;yaml.safe_load(sys.stdin)' < curriculum_vitae.yaml
+	@python3 -c 'import yaml,sys;yaml.safe_load(sys.stdin)' < curriculum_vitae.yaml
 
 %_CV.pdf: curriculum_vitae.yaml vc.tex
-	pandoc --template template_for_$*_CV.tex curriculum_vitae.yaml --pdf-engine xelatex -o $@
+	echo "" | pandoc -f markdown --template template_for_$*_CV.tex --metadata-file curriculum_vitae.yaml --pdf-engine xelatex -o $@
 
 vc.tex: curriculum_vitae.yaml
 	sh vc.sh

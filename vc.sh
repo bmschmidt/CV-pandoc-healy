@@ -17,8 +17,8 @@ while [ -n "$(echo $1 | grep '-')" ]; do
 done
 # English locale.
 LC_ALL=C
-git --no-pager log -1 HEAD --pretty=format:"Hash: %H%nAbr. Hash: %h%nParent Hashes: %P%nAbr. Parent Hashes: %p%nAuthor Name: %an%nAuthor Email: %ae%nAuthor Date: %ai%nCommitter Name: %cn%nCommitter Email: %ce%nCommitter Date: %ci%n" |gawk -v script=log -v full=$full -f vc-git.awk > vc.tex
+git --no-pager log -1 HEAD --pretty=format:"Hash: %H%nAbr. Hash: %h%nParent Hashes: %P%nAbr. Parent Hashes: %p%nAuthor Name: %an%nAuthor Email: %ae%nAuthor Date: %ai%nCommitter Name: %cn%nCommitter Email: %ce%nCommitter Date: %ci%n" | awk -v script=log -v full=$full -f vc-git.awk > vc.tex
 if [ "$mod" = 1 ]
 then
-  git status |gawk -v script=status -f vc-git.awk >> vc.tex
+  git status | awk -v script=status -f vc-git.awk >> vc.tex
 fi

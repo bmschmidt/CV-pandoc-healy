@@ -14,7 +14,8 @@
 \usepackage{paralist,ragged2e,datetime}
 \usepackage{hyperref,fancyhdr,enumitem,color}
 \usepackage[centering]{geometry}
-\usepackage{fontawesome}
+\usepackage{fontspec}
+\usepackage{fontawesome5}
 \usepackage[compact,small,sf,bf]{titlesec}
 
 %% ------------------------------------------------------------------------  
@@ -44,9 +45,15 @@
 %% Pragmata is available to buy at http://www.fsd.it/fonts/pragma.htm
 %% and is worth every penny. Any good monospace font will work fine, though.
 %% Consolas or inconsolata are good alternatives.
-\setromanfont[Mapping={tex-text},Numbers={OldStyle},Ligatures={Common}]{Minion Pro} 
-\setsansfont[Mapping=tex-text,Colour=ImperialBlue]{Myriad Pro}
-\setmonofont[Mapping=tex-text,Scale=0.9]{Avenir Next Condensed Regular} % Consolas, Pragmata, Lucida Console
+
+%%\setromanfont[Mapping={tex-text},Numbers={OldStyle},Ligatures={Common}]{Minion Pro} 
+%%\setsansfont[Mapping=tex-text,Colour=ImperialBlue]{Myriad Pro}
+%%\setmonofont[Mapping=tex-text,Scale=0.9]{Avenir Next Condensed Regular} % Consolas, Pragmata, Lucida Console
+
+\setromanfont[Mapping={tex-text},Numbers={OldStyle},Ligatures={Common}]{Times New Roman} 
+\setsansfont[Mapping=tex-text,Colour=ImperialBlue]{Arial}
+\setmonofont[Mapping=tex-text,Scale=0.9]{Courier} % Consolas, Pragmata, Lucida Console
+
 
 %% ------------------------------------------------------------------------
 %% Header and footer

@@ -1,0 +1,94 @@
+\documentclass[11pt, letter]{article}
+
+% This is a tex file to make Ben Schmidt's CV.
+% The content is 
+
+\usepackage{jk-vita}
+\usepackage[notes,natbib,isbn=false,backend=biber,url=false,numbermonth=true]{biblatex-chicago}
+
+
+%\usepackage{biblatex}
+
+% Your biblatex file is likely somewhere else.
+$if(bibliography)$
+\addbibresource{$bibliography$}
+$endif$
+
+\title{$title$}
+\name{$name$}
+% I guess postnoms is like junior? I dunno.
+\postnoms{}
+\address{
+$for(address)$
+  $address$\\
+$endfor$
+}
+\www{$www$}
+\email{$email$}
+\tel{$tel$}
+\twitter{$twitter$}
+\subject{}
+
+
+\begin{document}
+
+\maketitle
+
+\section{experience}
+
+$for(appointment)$
+\subsection{$appointment.place$}
+$for(appointment.items)$
+\textbf{$appointment.items.item$}. \emph{$appointment.items.date$}. $appointment.items.description$ \\
+
+$endfor$
+$endfor$
+
+\section{education}
+% Education uses a different field called ``items.''
+$for(education)$
+$education.place$, $education.item$, $education.date$. \\
+$endfor$
+
+% A little wonky. I want my publications divided up based on tags.
+% (Yes, it would be better to just do this with bib file). That's for later.
+
+\section{selected publications}
+
+$for(publication)$
+$if(publication.federal)$
+$if(publication.citekey)$
+\cite{$publication.citekey$}.\\[.1cm]
+$else$
+$if(publication.author)$$publication.author$,$endif$
+``$publication.title$.'' $if(publication.journal)$\textit{$publication.journal$}$if(publication.journal_info)$, $publication.journal_info$$endif$.$endif$ $publication.date$$if(publication.description)$. $publication.description$$endif$.\\[.15cm]
+% End of block for academic publications
+$endif$ 
+$endif$
+$endfor$
+
+\section{selected grants}
+
+$for(grants)$
+$if(grants.federal)$
+$grants.description$\\[.1cm]
+$endif$
+$endfor$
+
+\section{service}
+$for(service)$
+%\subsection{$service.type$}
+$for(service.gigs)$
+$if(service.gigs.twopage)$
+$service.gigs.item$. $service.gigs.date$.\\[.15cm]
+$endif$
+$endfor$
+$endfor$
+
+\section{software}
+
+$for(software)$
+``$software.program$.'' ($software.language$) $software.description$\\[.1cm]
+$endfor$
+
+\end{document}
