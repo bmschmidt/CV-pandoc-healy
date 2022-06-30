@@ -5,7 +5,7 @@ address:
     - 20 Cooper Square, Room 538
     - New York University
     - New York, NY 10003
-email: bs145@nyu.edu
+email: bmschmidt@gmail.com
 twitter: benmschmidt
 www: benschmidt.org
 tel: 609.619.0629
@@ -17,7 +17,7 @@ appointment:
     items:
       -
         item: Clinical Associate Professor of History
-        date: September 2019-Present
+        date: September 2019–Present
         description: |
            Teach and research at intersection of history and data science. Published articles in
            *Journal of Information Science and Technology*, *Proceedings of the National 
@@ -25,7 +25,7 @@ appointment:
            Co-directed Humanities Lab group detailing issues around data collection and migrant records.
       -
         item: Director of Digital Humanities
-        date: September 2019-Present
+        date: September 2019–Present
         description: |
           Launched and oversaw first three years of 10-year, $1,000,000 seed grant program.
           Launched and secured funding for new summer graduate fellowship.
@@ -92,16 +92,27 @@ education:
 
 publication:
   -
+    title: "Artificial Intelligence and the Historical Profession Roundtable"
+    journal: "American Historical Review"
+    date: Accepted (under editing)
+    academic: true
+    resume: true
+  -
     title: "Uncontrolled corpus composition drives an apparent surge in cognitive distortions. Benjamin Schmidt, Steven T. Piantadosi, Kyle Mahowald. Proceedings of the National Academy of Sciences Nov 2021, 118 (45) e2115010118; DOI: 10.1073/pnas.2115010118."
     journal: "Proceedings of the National Academy of Sciences"
     date: 2021-11
     twopage: true
     academic: true
     resume: true
+  -
+    title: "Two volumes: Slavery, Cliometrics, and the pasts and future of American Digital History" 
+    journal: "Debates in the Digital Humanities: *Computational Humanities*"
+    date: Full volume under review
+    academic: true
   - 
     author: "Organisciak, P., Schmidt, B. M., & Downie, J. S."
     title: "Giving shape to large digital libraries through exploratory data analysis."
-    journal: "Journal of the Association for Information Science and Technology, 73( 2), 317– 332."
+    journal: "Journal of the Association for Information Science and Technology, 73( 2), 317–332."
     doi: "https://doi.org/10.1002/asi.24547"
     date: 2021-09
     academic: true
@@ -111,6 +122,13 @@ publication:
     date: "Digital Monograph, in progress"
     twopage: true
     academic: true
+  -
+    title: "H-Lab: Asylum and Im/migration"
+    author: "Sibylle Fischer, Ellen Noonan, and Benjamin M. Schmidt"
+    date: 2021-11
+    academic: true
+    journal: "Esferas Volume 12: Migración y Asilo"
+    twopage: false    
   -
     author: "Peter Organisciak, Grace Therrell, Maggie Ryan, Benjamin MacDonald Schmidt"
     title: Examining patterns of text reuse in digitized text collections
@@ -188,7 +206,7 @@ publication:
     twopage: false
     academic: true
   -
-    date: November 2010-Present
+    date: November 2010–2020
     url: sappingattention.blogspot.com
     title: Sapping Attention
     description: Blog publishing original research and discussion in digital humanities, data visualization, and text mining
@@ -275,7 +293,7 @@ publication:
 grants:
 - 
   resume: false
-  description: "Asylum Lab, NYU Center for the Humanities"
+  description: "Asylum Lab, NYU Center for the Humanities. Bennett-Polonsky Humanities Labs, $50,000 Internal Grant with Sibylle Fischer and Ellen Noonan."
 - 
   description: "Similarity and Duplication in Digital Libraries. IMLS grant. Co-PI; Peter Organisciak, University of Denver."
   resume: true
@@ -575,15 +593,15 @@ workshop:
 teaching:
 -
   title: "Introduction to Programming"
-  date: Fall 2020
+  date: Fall 2020, Fall 2021
   type: Graduate
 - 
   title: "The History of Big Data"
-  date: Spring 2020
+  date: Spring 2020, Fall 2021
   type: Undergraduate
 -
   title: "Working with Data"
-  date: Spring 2020, Spring 2021
+  date: Spring 2020, Spring 2021, Spring 2022
   type: Graduate
 - 
   title: "Asylum in Crisis. Co-taught with Sibylle Fischer and Ellen Noonan"
@@ -716,22 +734,22 @@ service:
   gigs:
     -
       item: Advisory board, "What Every1Says." Mellon Foundation-funded project on public discourse around the humanities.
-      date: 2017-2019
+      date: 2017–2019
       twopage: true
     -
       item:  Working Group on Big Data and History, Social Science Resource Council
-      date: 2015-2018
+      date: 2015–2018
       twopage: false
     -
       item: Advisory Board, Culture Analytics
-      date: 2015-Present
+      date: 2015–Present
       twopage: true
     -
       item:  Grant reviewer, National Endowment for the Humanities
       date: 2014, 2019
     -
       item:  Digital Content Advisor, The American Yawp, Online History Textbook
-      date: 2014-Present
+      date: 2014–Present
     -
       item:  Participant, Hathi Trust Research Center Un-Camp
       date: September 10-11, 2012
@@ -743,10 +761,10 @@ service:
   gigs:
     - 
       item: DH Steering Committee
-      date: 2019-present
+      date: 2019–present
     -
       item: Faculty Advisory Board, Research technology
-      date: 2019-present
+      date: 2019–present
     - 
       item: University committee on course evaluations
       date: 2020
@@ -755,7 +773,7 @@ service:
       date: 2020
     - 
       item: Digital Humanities Seed Grant Committee, co-chair
-      date: 2019-present
+      date: 2019–present
     -
       item: Committee on undergraduate research, College of Social Sciences and Humanities.
       date: 2016
@@ -797,18 +815,18 @@ service:
       date: 2007-2008
 software:
 - 
-  program: Bookworm
+  title: Bookworm
   language: Python
   url: github.com/Bookworm-project/BookwormDB
   description: Visualization and statistical analysis API for nonconsumptive analysis of massive textual 
      corpora. Used by Hathi Trust Research Center, Yale University Digital Scholarship, Columbia History Lab, etc.
 -
-  program: WordVectors
+  title: WordVectors
   language: R
   url: github.com/bmschmidt/wordVectors
   description: Widely used R package for creation and analysis of word2vec and other word embedding models.
 - 
-  program: Deepscatter
+  title: Deepscatter
   language: Javascript/WebGL
   url: github.com/CreatingData/deepscatter
   description: Data tiling to display zoomable D3 scatterplots with tens of millions of items in browser.

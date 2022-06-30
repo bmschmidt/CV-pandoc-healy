@@ -1,5 +1,5 @@
 
-all: validate_yaml long_CV.pdf short_CV.pdf federal_CV.pdf
+all: validate_yaml long_CV.pdf short_CV.pdf resume_CV.pdf
 
 SchmidtCV.pdf:
 	cp long_CV.pdf $@
