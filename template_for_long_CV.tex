@@ -100,10 +100,17 @@ $endif$
 $endif$
 $endfor$
 
+
 \section{grants and fellowships}
 
 $for(grants)$
-$grants$\\[.15cm]
+$grants.description$\\[.15cm]
+$endfor$
+
+\section{software}
+
+$for(software)$
+$software.title$ ($software.language$). $software.description$.\\[.15cm]
 $endfor$
 
 \section{invited talks}
@@ -154,7 +161,7 @@ $for(media_coverage)$
 $if(media_coverage.citekey)$
 \fullcite{$media_coverage.citekey$}\\
 $else$
-$media_coverage.title$
+$media_coverage.title$, $media_coverage.journal$ ($media_coverage.date$) \\[.15cm]
 $endif$
 $endfor$
 
