@@ -2,9 +2,8 @@
 name: Benjamin MacDonald Schmidt
 title: ""
 address:
-    - 20 Cooper Square, Room 538
-    - New York University
-    - New York, NY 10003
+    - 36 E 20th st, floor 8
+    - Manhattan, NY 10003
 email: bmschmidt@gmail.com
 twitter: benmschmidt
 www: benschmidt.org
@@ -12,14 +11,23 @@ tel: 609.619.0629
 bibliography: tmp.bib
 
 appointment:
+  - place: Nomic AI
+    items: 
+      - 
+        item: Vice President, Information Design
+        date: September 2022-present
+        description: |
+          First hire at at pre-revenue stealth startup after co-founders raised seed round;
+          grew company through Series A funding from 3 employees to nearly 20. Led front-end development
+          and managed front-end team while helping lead Atlas product to several large enterprise contracts.
   -
     place: New York University
     items:
       -
         item: Clinical Associate Professor of History
-        date: September 2019–Present
+        date: September 2019–September 2022
         description: |
-           Teach and research at intersection of history and data science. Published articles in
+           Taught and researched at intersection of history and data science. Published articles in
            *Journal of Information Science and Technology*, *Proceedings of the National 
            Academy of Sciences*.
            Co-directed Humanities Lab group detailing issues around data collection and migrant records.

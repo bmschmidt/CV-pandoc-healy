@@ -1,5 +1,5 @@
 
-all: validate_yaml long_CV.pdf short_CV.pdf resume_CV.pdf
+all: vc.tex validate_yaml long_CV.pdf short_CV.pdf resume_CV.pdf
 
 SchmidtCV.pdf:
 	cp long_CV.pdf $@
@@ -20,4 +20,3 @@ hrm:
 
 clean:
 	-rm -f *CV.aux *CV.bcf *CV.log *CV.out *CV.run.xml *CV.pdf short_CV.tex long_CV.tex *CV.bbl *CV.blg *yaml_CV.md
-
